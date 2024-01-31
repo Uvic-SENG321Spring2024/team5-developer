@@ -4,14 +4,12 @@
 
 | Name | Date | Reason for Changes | Version |
 | ----------- | ----------- | ------------- | ---------- | 
-|  |  | | |
+| Initial Draft | 2024-01-30 | Document Created | 1.0 |
 |  |  | | |
 |  |  | | |
 |  |  | | |
 
 ## Table of Contents
-
-<ins>
 
 - [1. Overview](#1-overview)
 
@@ -36,8 +34,6 @@
 - [5. Appendix](#5-appendix)
    * [5.1 Glossary of Terms](#51-glossary-of-terms)
    * [5.2 References](#52-references)
-
-</ins>
 
 ## 1. Overview
 
