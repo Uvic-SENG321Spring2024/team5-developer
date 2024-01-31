@@ -39,36 +39,60 @@
 
 ## 2. Business Requirements
 
-   #### **2.1 Background**
+#### **2.1 Background**
 
-   #### **2.2 Business Opportunity**
+#### **2.2 Business Opportunity**
 
-   #### **2.3 Business Objectives**
+#### **2.3 Business Objectives**
 
-   #### **2.4 Success Metrics**
+#### **2.4 Success Metrics**
 
-   #### **2.5 Product Vision Statement**
+#### **2.5 Product Vision Statement**
 
 ## 3. Scope and Limitations
 
-   #### **3.1 Major Features**
+#### **3.1 Major Features**
 
-   #### **3.2 Project Scope**
+#### **3.2 Project Scope**
 
-   #### **3.3 Limitations and Exclusions**
+#### **3.3 Limitations and Exclusions**
 
 ## 4. Context Description
 
-   #### **4.1 User Classes and Characteristics**
+#### **4.1 User Classes and Characteristics**
 
-   #### **4.2 Operating Environment**
+1. **Licensing and Information Officers (LIOs):**
+   - ***Usage Frequency:***
+   - ***Usage Description:***
+   - ***Technical Expertise:***
+   - ***Privilege Level:***
 
-   #### **4.3 Design and Implmentation Constraints**
+2. **LIO Supervisors:**
+   - ***Usage Frequency:***
+   - ***Usage Description:***
+   - ***Technical Expertise:***
+   - ***Privilege Level:***
 
-   #### **4.4 Assumptions and Dependencies**
+3. **Investigatory Departments:**
+   - ***Usage Frequency:***
+   - ***Usage Description:***
+   - ***Technical Expertise:***
+   - ***Privilege Level:***
+
+#### **4.2 Operating Environment**
+
+#### **4.3 Design and Implmentation Constraints**
+
+#### **4.4 Assumptions and Dependencies**
 
 ## 5. Appendix
 
-   #### **5.1 Glossary of Terms**
+#### **5.1 Glossary of Terms**
+
+   | Term | Definition |
+   | ---- | ---------- |
+   |      |            |
+   |      |            |
+   |      |            |
 
    #### **5.2 References**
