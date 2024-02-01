@@ -88,6 +88,14 @@
 #### **4.3 Design and Implmentation Constraints**
 
 #### **4.4 Assumptions and Dependencies**
+The project’s dependency on two pre-existing third-party software applications could affect the defined requirements. 
+
+The current understanding of how Iris and SysAid function as individual systems and how they are utilized during the complaint process is that information is manually input into each system using pre-defined fields. Iris consists of a database of previous and current complaints that can be updated by users, and collects more granular information about the complaint in specific fields. SysAid is used primarily for its ticketing capabilities and notification system, since Iris does not have the capability to notify investigators when they are assigned to a complaint. It collects more generic information, and also allows LIOs to define the impact and priority of the complaint. If the assumptions about how the two different systems are used in conjunction with each other are incorrect or change, it may result in requirements needing to be adjusted.
+
+The only part of Iris’s system that the product will interact with is the complaint module, and the only part of SysAid’s system that will be interfaced with is the ticketing system. If this is untrue, it will change the requirements.
+
+Additionally, CPBC has access to the source code for Iris, but they do not have source code for SysAid. The product will need to automate the process of putting information into both Iris and SysAid. The dependency on SysAid and any limitations caused by a lack of access to source code may also necessitate changes to the requirements.
+
 
 ## 5. Appendix
 
