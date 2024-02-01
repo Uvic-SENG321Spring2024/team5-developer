@@ -62,22 +62,21 @@ The new design will interconnect these two features into one accessible interfac
 
 #### **3.2 Project Scope**
 The objective of the new interface is to allow LIOs to:
-Reduce the time spent navigating between complaints and tickets modules.
-Efficiently find and reference past and current filed complaints.
-Accurately manage complaints currently under investigation.
-Indefinitely store and recover previously filed complaints.
-Assign investigators and LIOs to complaints.
-Assign investigators and LIOs to tickets.
-Keep track of progress on current tickets.
-Notify LIOs and investigators when tickets are updated and resolved.
+- Reduce the time spent navigating between complaints and tickets modules.
+- Efficiently find and reference past and current filed complaints.
+- Accurately manage complaints currently under investigation.
+- Indefinitely store and recover previously filed complaints.
+- Assign investigators and LIOs to complaints.
+- Assign investigators and LIOs to tickets.
+- Keep track of progress on current tickets.
+- Notify LIOs and investigators when tickets are updated and resolved.
 
 #### **3.3 Limitations and Exclusions**
 The following limitations are imposed on the system:
-   No available source code for the current ticketing system.
-   Current code is not modifiable.
-   Since data is confidential, developers must have the necessary permissions to access the two systems.
-   The system must operate on Windows operating system.
-
+- No available source code for the current ticketing system.
+- Current code is not modifiable.
+- Since data is confidential, developers must have the necessary permissions to access the two systems.
+- The system must operate on Windows operating system.
 
 ## 4. Context Description
 
