@@ -71,7 +71,7 @@ Indicators that stakeholders will use to define and measure success on the proje
 - All security protocols are met and approved by the shareholders.
 
 #### **2.5 Product Vision Statement**
-The new product's long-term vision is to streamline complaint filing and fulfillment, addressing the underutilization of the current system. By integrating IRIS and SysAid, we aim to reduce complaint processing time. Users will interact with the new, unified system instead of navigating both IRIS and SysAid, ensuring a more efficient and user-friendly experience. The following diagram illustrates this proposed process.
+The new product's long-term vision is to streamline complaint filing and fulfillment, addressing the underutilization of the current system. By integrating IRIS and SysAid, we aim to reduce complaint processing time. Users will interact with the new, unified system instead of navigating both Iris and SysAid, ensuring a more efficient and user-friendly experience. The following diagram illustrates this proposed process.
 <img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/4092a17d-b7d3-4fc9-8cd7-c035f5d27b08">
 
 
