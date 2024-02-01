@@ -1,4 +1,8 @@
-# Requirements Document - Consumer Protection BC
+<p = align="center">
+   <img src="https://www.consumerprotectionbc.ca/wordpress/wp-content/themes/consumerprotectionbc/images/logo.png" width="30%">
+<p>
+
+<h1 align="center"> Requirements Document - Consumer Protection BC </h1>
 
 ## Revision History
 
@@ -89,10 +93,10 @@
 
 #### **5.1 Glossary of Terms**
 
-   | Term | Definition |
-   | ---- | ---------- |
-   |      |            |
-   |      |            |
-   |      |            |
+| Term | Definition |
+| ---- | ---------- |
+|      |            |
+|      |            |
+|      |            |
 
-   #### **5.2 References**
+#### **5.2 References**
