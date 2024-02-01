@@ -95,8 +95,10 @@
 
 | Term | Definition |
 | ---- | ---------- |
-|      |            |
-|      |            |
-|      |            |
+| CPBC | Consumer Protection British Columbia. |
+| Iris | Software system used to input and store consumer complaints and their resolution status. |
+| LIO | Licensing Information Officer; the CPBC employee who first logs a consumer complaint. |
+| SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
+| Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
 #### **5.2 References**
