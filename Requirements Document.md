@@ -45,7 +45,7 @@ As the provincial not-for-profit in charge of business regulation and licensing,
 
 The current complaint system is inefficient and prone to human error. It consists of two software programs called Iris and SysAid, where Iris is used to input and store complaints received from a consumer, and SysAid is used to create tickets in order for complaints to be resolved by CPBC staff. By using two systems to manage one consumer complaint, complaints are resolved unsatisfactorily slow. 
 
-A simplification of the complaint process would lead to higher consumer satisfaction, an increase in the number of complaints successfully resolved each quarter, and higher work satisfaction from CPBC staff. By building a product that can effectively interface with both Iris and SysAid, CPBC’s required internal software, fallible manual processes can be reduced. Consumer complaints essential to the CPBC and its role in maintaining a safe marketplace will be resolved faster and with fewer oversights.
+A simplification of the complaint process would lead to higher consumer satisfaction, an increase in the number of complaints successfully resolved each quarter, and higher work satisfaction from CPBC staff. By building a product that can effectively interface with both Iris and SysAid - CPBC’s required internal software - fallible manual processes can be reduced. Consumer complaints essential to the CPBC and its role in maintaining a safe marketplace will be resolved faster and with fewer oversights.
 
 
 ## 2. Business Requirements
