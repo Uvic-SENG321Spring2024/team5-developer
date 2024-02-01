@@ -84,6 +84,11 @@
    - ***Privilege Level:***
 
 #### **4.2 Operating Environment**
+The environment in which the product operates is as follows:
+- The product must run on a Windows machine and be accessible from a desktop. No mobile functionality is needed. 
+- The software must coexist and directly interface with the complaint module within Iris.
+- The software must also interface with SysAid’s ticketing system. 
+
 
 #### **4.3 Design and Implmentation Constraints**
 
