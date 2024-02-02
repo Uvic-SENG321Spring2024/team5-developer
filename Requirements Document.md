@@ -74,7 +74,7 @@ The objective of the new interface is to allow LIOs to:
 #### **3.3 Limitations and Exclusions**
 The following limitations are imposed on the system:
 - No available source code for SysAid ticketing module.
-- Cannot modify source code for Iris complaints module.
+- Source code for the Iris complaints module cannot be modified.
 - Since data is confidential, developers must have the necessary permissions to access the two systems.
 - The system must operate on Windows operating system.
 
