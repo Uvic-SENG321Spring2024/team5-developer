@@ -8,8 +8,8 @@
 
 | Name | Date | Reason for Changes | Version |
 | ----------- | ----------- | ------------- | ---------- | 
-| Initial Draft | 2024-01-30 | Document Created | 1.0 |
-|  |  | | |
+| Initial Draft | 2024-01-30 | Document created | 1.0 |
+| Overview | 2024-01-31 | Overview section created | 1.1 |
 |  |  | | |
 |  |  | | |
 
