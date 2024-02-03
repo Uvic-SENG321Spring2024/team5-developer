@@ -65,7 +65,7 @@
 
 #### **4.1 User Classes and Characteristics**
 
-Based on information collected during interviews with Consumer Protection BC, three main user classes have been identified. These user classes - LIOs, LIO Supervisors, and Investigatory Departments - form the core team responsible for managing and resolving consumer complaints.
+Based on information collected during interviews with Consumer Protection BC, three main user classes have been identified. These user classes—LIOs, LIO Supervisors, and Investigatory Departments—form the core team responsible for managing and resolving consumer complaints.
 
 1. **Licensing and Information Officers (LIOs):** LIOs drive the complaint resolution process by interacting with consumers, managing complaints, and ensuring secure and accurate handling of consumer details.
    - ***Usage Frequency:*** High
