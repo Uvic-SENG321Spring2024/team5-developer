@@ -65,22 +65,22 @@
 
 #### **4.1 User Classes and Characteristics**
 
-Based on information collected during interviews with Consumer Protection BC, three main user classes have been identified. These user classes (LIOs, LIO Supervisors, and Investigatory Departments) form the core team responsible for managing and resolving consumer complaints.
+Based on information collected during interviews with Consumer Protection BC, three main user classes have been identified. These user classes - LIOs, LIO Supervisors, and Investigatory Departments - form the core team responsible for managing and resolving consumer complaints.
 
 1. **Licensing and Information Officers (LIOs):** LIOs drive the complaint resolution process by interacting with consumers, managing complaints, and ensuring secure and accurate handling of consumer details.
    - ***Usage Frequency:*** High
    - ***Usage Description:*** LIOs primarily use the system for complaint intake and management, inputting consumer details, and initiating the resolution process.
    - ***Technical Expertise:*** Moderate. LIOs are responsible for interacting with the complaint module of Iris and must ensure accurate input of consumer details.
-   - ***Privilege Level:*** LIOs have access to all personal information and complaint details within Iris. They have limited access to fields handled by LIO supervisors.
+   - ***Privilege Level:*** LIOs have access to all personal information and complaint details within Iris. They have limited access to fields handled by LIO Supervisors.
 
 2. **LIO Supervisors:** LIO Supervisors oversee the system, assign complaints to different Investigatory Departments, manage workflow, and have higher-level access.
-   - ***Usage Frequency:*** Moderate
+   - ***Usage Frequency:*** Moderate.
    - ***Usage Description:*** Supervisors primarily interact with the system by assigning tickets created by LIOs to the appropriate department, done within Iris.
    - ***Technical Expertise:*** Moderate. Supervisors interact with the software system on a lower frequency than LIOs, but must review information present in the system to make workflow decisions.
    - ***Privilege Level:*** Supervisors have similar access levels as LIOs, but have the added ability to review and assign tickets to the relevant Investigatory Department.
 
 3. **Investigatory Departments:** Investigators handle complaint resolution by examining the laws covered by CPBC. They utilize information from the system for investigations and complete tickets by providing information about how a complaint was resolved.
-   - ***Usage Frequency:*** High during complaint resolution
+   - ***Usage Frequency:*** High during complaint resolution.
    - ***Usage Description:*** Investigators are assigned to examine and resolve complaints that they receive in ticket form through SysAid. They also interact with Iris by completing additional fields relating to how a complaint was eventually resolved.
    - ***Technical Expertise:*** Moderate. The primary job of Investigators lies outside the system in examining complaints and how they relate to relevant laws. However, Investigators must be able to understand the ticketing system and reliably provide it with accurate information.
    - ***Privilege Level:*** Investigators can only see tickets assigned to their specific department, and have only view-access to information relevant to their investigation. They have write-access for resolution-related fields to allow tickets to be closed.
