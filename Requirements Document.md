@@ -61,7 +61,7 @@ The current system contains two major features: the complaints module and the ti
 The new product will interconnect these two features into one accessible interface. This interface will allow LIOs to file, manage, track, and resolve complaints and tickets using only one system. Complaints and tickets will remain accessible within Iris and SysAid respectively.
 
 #### **3.2 Project Scope**
-The objectives of the new interface are:
+The objectives of the new interface are to:
 - Reduce the time spent navigating between complaints and tickets modules.
 - Efficiently find and reference past and current filed complaints.
 - Accurately manage complaints currently under investigation.
