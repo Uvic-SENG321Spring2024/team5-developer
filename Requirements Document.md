@@ -64,11 +64,28 @@ The proposed product is expected to address several challenges for CPBC in a mea
 - Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications.
 
 #### **2.4 Success Metrics**
-Indicators that stakeholders will use to define and measure success on the project. What are the factors that will have the greatest impact on achieving success (i.e., could include aspects within and external to the organization).
-- Time taken to file the complaints is reduced.
-- A survey is sent out to users after a complaint is completed and staff polls are visible to measure customer satisfaction.
-- The underutilization of the system is addressed. 
-- All security protocols are met and approved by the shareholders.
+-· Accuracy of Complaint Handling:
+   o   Indicator: Percentage of complaints accurately handled and resolved.
+   o   Impact: Ensures consumer satisfaction and regulatory compliance.
+ 
+· Efficiency in Workflow:
+   o   Indicator: Reduction in the time taken to process and resolve complaints.
+   o   Impact: Increases overall efficiency, minimizes delays, and enhances responsiveness.
+ 
+· User Satisfaction:
+   o   Indicator: Consumer satisfaction ratings through surveys.
+   o   Impact: Reflects the success of the system in meeting user needs and expectations.
+ 
+· Compliance with Regulations:
+   o   Indicator: Adherence to federal and provincial employee rights regulations.
+   o   Impact: Mitigates legal risks and ensures ethical business practices.
+ 
+· Security and Access Control:
+   o   Indicator: Effective implementation of access permissions and data security measures.
+   o   Impact: Protects sensitive information, ensures data integrity, and builds stakeholder trust.
+ 
+The success of the project is intertwined with these indicators, which collectively contribute to achieving positive outcomes and meeting organizational objectives. The greatest impact on success lies in a holistic approach that considers both internal and external factors, aligning the project with the organization's overarching goals and regulatory requirements.
+
 
 #### **2.5 Product Vision Statement**
 The new product's long-term vision is to streamline complaint filing and fulfillment, addressing the underutilization of the current system. By integrating Iris and SysAid, we aim to reduce complaint processing time. Users will interact with the new, unified system instead of navigating both Iris and SysAid, ensuring a more efficient and user-friendly experience. The following diagram illustrates this proposed process:
