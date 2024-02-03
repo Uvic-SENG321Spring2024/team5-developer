@@ -62,7 +62,7 @@ The new product will interconnect these two features into one accessible interfa
 
 #### **3.2 Project Scope**
 The objectives of the new interface are to:
-- Reduce the time spent navigating between complaints and tickets modules.
+- Reduce the time spent by LIOs navigating between complaints and tickets modules.
 - Efficiently find and reference past and current filed complaints.
 - Accurately manage complaints currently under investigation.
 - Indefinitely store and recover previously filed complaints.
