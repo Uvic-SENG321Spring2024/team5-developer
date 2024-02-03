@@ -44,11 +44,11 @@
 ## 2. Business Requirements
 
 #### **2.1 Background**
-The existing procedure for submitting a complaint to CPBC is characterized by a significant reliance on manual processes, making it susceptible to human errors. The complaint submission process involves the utilization of two distinct software systems: Iris, where users file their complaints, and SysAid, where the complaint ticket is generated manually by employees. However, a notable discrepancy exists between these two systems, emphasizing the necessity for a more cohesive and streamlined approach. Implementing a refined process would not only alleviate stress for both users and employees but also mitigate errors by incorporating automation into the system. This integration aims to enhance efficiency and foster a more seamless experience in managing and resolving complaints.
+The existing procedure for submitting a complaint to CPBC is characterized by a significant reliance on manual processes, making it susceptible to human errors. The complaint submission process involves the utilization of two distinct software systems: Iris, where the LIO's file consumer complaints, and SysAid, where the complaint ticket is generated manually by employees. However, a notable discrepancy exists between these two systems, emphasizing the necessity for a more cohesive and streamlined approach. Implementing a refined process would not only alleviate stress for both users and employees but also mitigate errors by incorporating automation into the system. This integration aims to enhance efficiency and foster a more seamless experience in managing and resolving complaints.
 
 
 #### **2.2 Business Opportunity**
-The system that the CPBC is currently using is highly prone to inefficiencies and human error. Moreover, the current ticketing system is underutilized.  
+The system that the CPBC is currently using is highly prone to inefficiencies and human error. Moreover, the current ticketing system is underutilized due to its inefficiency.  
 
 Customer Requirements:
 - Organizing the consumer complaint process to reduce the time taken for filing.
@@ -59,7 +59,7 @@ Customer Requirements:
 #### **2.3 Business Objectives**
 The proposed product is expected to address several challenges for CPBC in a measurable manner. The primary business objectives targeted by the solution include:
 - Enhancing Process Efficiency: This will be quantified by the time required to both submit a complaint and generate a corresponding ticket.
-- Minimizing Human Errors: The aim is to decrease the occurrence of errors recorded during the complaint handling process.
+- Minimizing Human Errors: The aim is to decrease the frequency of errors during the complaint handling process.
 - Elevating Customer Satisfaction: This will be assessed through post-complaint filing surveys, focusing on improving the overall user experience.
 - Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications.
 
@@ -71,8 +71,11 @@ Indicators that stakeholders will use to define and measure success on the proje
 - All security protocols are met and approved by the shareholders.
 
 #### **2.5 Product Vision Statement**
-The new product's long-term vision is to streamline complaint filing and fulfillment, addressing the underutilization of the current system. By integrating IRIS and SysAid, we aim to reduce complaint processing time. Users will interact with the new, unified system instead of navigating both Iris and SysAid, ensuring a more efficient and user-friendly experience. The following diagram illustrates this proposed process.
-<img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/4092a17d-b7d3-4fc9-8cd7-c035f5d27b08">
+The new product's long-term vision is to streamline complaint filing and fulfillment, addressing the underutilization of the current system. By integrating Iris and SysAid, we aim to reduce complaint processing time. Users will interact with the new, unified system instead of navigating both Iris and SysAid, ensuring a more efficient and user-friendly experience. The following diagram illustrates this proposed process:
+<p align="center">
+   <img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/4092a17d-b7d3-4fc9-8cd7-c035f5d27b08">
+</p>
+
 
 
 
