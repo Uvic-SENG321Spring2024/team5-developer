@@ -65,7 +65,7 @@ The objectives of the new interface are to:
 - Reduce the time spent by LIOs navigating between complaints and tickets modules.
 - Improve efficiency while finding and referencing past and current filed complaints.
 - Accurately manage complaints currently under investigation.
-- Indefinitely store and recover previously filed complaints.
+- Indefinitely store and access previously filed complaints.
 - Assign investigators and LIOs to complaints.
 - Assign investigators and LIOs to tickets.
 - Keep track of progress on current tickets.
