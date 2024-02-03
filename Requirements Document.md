@@ -63,10 +63,27 @@ A simplification of the complaint process would lead to higher consumer satisfac
 ## 3. Scope and Limitations
 
 #### **3.1 Major Features**
+The current system contains two major features: the complaints module and the ticketing system. The complaints module, located within the Iris program, allows LIOs to log, manage, and resolve complaints filed by consumers. These complaints are then stored within Iris’ database indefinitely, and may be accessed at a future time. The ticketing system, SysAid, allows LIOs to internally track and update progress on complaints filed within Iris.
+
+The new product will interconnect these two features into one accessible interface. This interface will allow LIOs to file, manage, track, and resolve complaints and tickets using only one system. Complaints and tickets will remain accessible within Iris and SysAid respectively.
 
 #### **3.2 Project Scope**
+The objectives of the new interface are to:
+- Reduce the time spent by LIOs navigating between complaints and tickets modules.
+- Improve efficiency while finding and referencing past and current filed complaints.
+- Accurately manage complaints currently under investigation.
+- Indefinitely store and access previously filed complaints.
+- Assign investigators and LIOs to complaints.
+- Assign investigators and LIOs to tickets.
+- Keep track of progress on current tickets.
+- Notify LIOs and investigators when tickets are updated and resolved.
 
 #### **3.3 Limitations and Exclusions**
+The following limitations are imposed on the system:
+- No source code is available for the SysAid ticketing module.
+- Source code for the Iris complaints module cannot be modified.
+- Since data is confidential, developers must have the necessary permissions to access the two systems.
+- The system must operate on Windows operating system.
 
 ## 4. Context Description
 
