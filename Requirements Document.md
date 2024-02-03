@@ -112,6 +112,11 @@ Based on information collected during interviews with Consumer Protection BC, th
 Based on the objectives of the system, none of the classes—Licensing and Information Officers (LIOs), LIO Supervisors, and Investigators—should be prioritized over another. All three user classes interact with the system as a vital part in the complaint resolution process, and therefore failing to address the needs of one class over another will prevent the system from meeting its objectives.
 
 #### **4.2 Operating Environment**
+The environment in which the product operates is as follows:
+- The software must run on a Windows machine and be accessible from a desktop. No mobile functionality is needed. 
+- The software must coexist and directly interface with the complaint module within Iris.
+- The software must also coexist and directly interface with SysAid’s ticketing system. 
+
 
 #### **4.3 Design and Implmentation Constraints**
 
