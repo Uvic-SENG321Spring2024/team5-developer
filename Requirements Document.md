@@ -135,9 +135,9 @@ The following limitations are imposed on the system:
 
 #### **4.1 User Classes and Characteristics**
 
-Based on information collected during interviews with Consumer Protection BC, three main user classes have been identified. These user classes—LIOs, LIO Supervisors, and Investigatory Departments—form the core team responsible for managing and resolving consumer complaints.
+Based on information collected during interviews with Consumer Protection BC, three main user classes have been identified. These user classes—Licensing Information Officers (LIOs), LIO Supervisors, and Investigators—form the core team responsible for managing and resolving consumer complaints.
 
-1. **Licensing and Information Officers (LIOs):** LIOs drive the complaint resolution process by interacting with consumers, managing complaints, and ensuring secure and accurate handling of consumer details.
+1. **Licensing Information Officers (LIOs):** LIOs drive the complaint resolution process by interacting with consumers, managing complaints, and ensuring secure and accurate handling of consumer details.
    - ***Usage Frequency:*** High
    - ***Usage Description:*** LIOs primarily use the system for complaint intake and management, inputting consumer details, and initiating the resolution process.
    - ***Technical Expertise:*** Moderate. LIOs are responsible for interacting with the complaint module of Iris and must ensure accurate input of consumer details.
@@ -155,7 +155,7 @@ Based on information collected during interviews with Consumer Protection BC, th
    - ***Technical Expertise:*** Moderate. The primary job of Investigators lies outside the system in examining complaints and how they relate to relevant laws. However, Investigators must be able to understand the ticketing system and reliably provide it with accurate information.
    - ***Privilege Level:*** Investigators can only see tickets assigned to their specific department, and have only view-access to information relevant to their investigation. They have write-access for resolution-related fields to allow tickets to be closed.
 
-Based on the objectives of the system, none of the classes—Licensing and Information Officers (LIOs), LIO Supervisors, and Investigators—should be prioritized over another. All three user classes interact with the system as a vital part in the complaint resolution process, and therefore failing to address the needs of one class over another will prevent the system from meeting its objectives.
+Based on the objectives of the system, none of the classes should be prioritized over another. All three user classes interact with the system as a vital part in the complaint resolution process, and therefore failing to address the needs of one class over another will prevent the system from meeting its objectives.
 
 #### **4.2 Operating Environment**
 
