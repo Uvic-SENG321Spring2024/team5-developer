@@ -37,7 +37,6 @@
 
 - [5. Appendix](#5-appendix)
    * [5.1 Glossary of Terms](#51-glossary-of-terms)
-   * [5.2 References](#52-references)
 
 ## 1. Overview
 
@@ -190,4 +189,3 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 | SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
 | Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
-#### **5.2 References**
