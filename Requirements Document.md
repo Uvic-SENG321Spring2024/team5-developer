@@ -10,7 +10,7 @@
 | ----------- | ----------- | ------------- | ---------- | 
 | Initial Draft | 2024-01-30 | Document created | 1.0 |
 | Overview | 2024-01-31 | Overview section created | 1.1 |
-|  |  | | |
+| Final | 2024-02-04 | Final edit | 1.2 |
 |  |  | | |
 
 ## Table of Contents
