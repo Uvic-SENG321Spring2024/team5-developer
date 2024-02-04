@@ -71,25 +71,25 @@ The proposed product is expected to address several challenges for CPBC in a mea
 - Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications.
 
 #### **2.4 Success Metrics**
--· Accuracy of Complaint Handling:
-   o   Indicator: Percentage of complaints accurately handled and resolved.
-   o   Impact: Ensures consumer satisfaction and regulatory compliance.
+- Accuracy of Complaint Handling:
+   * Indicator: Percentage of complaints accurately handled and resolved.
+   * Impact: Ensures consumer satisfaction and regulatory compliance.
  
-· Efficiency in Workflow:
-   o   Indicator: Reduction in the time taken to process and resolve complaints.
-   o   Impact: Increases overall efficiency, minimizes delays, and enhances responsiveness.
+- Efficiency in Workflow:
+   * Indicator: Reduction in the time taken to process and resolve complaints.
+   * Impact: Increases overall efficiency, minimizes delays, and enhances responsiveness.
  
-· User Satisfaction:
-   o   Indicator: Consumer satisfaction ratings through surveys.
-   o   Impact: Reflects the success of the system in meeting user needs and expectations.
+- User Satisfaction:
+   * Indicator: Consumer satisfaction ratings through surveys.
+   * Impact: Reflects the success of the system in meeting user needs and expectations.
  
-· Compliance with Regulations:
-   o   Indicator: Adherence to federal and provincial employee rights regulations.
-   o   Impact: Mitigates legal risks and ensures ethical business practices.
+- Compliance with Regulations:
+   * Indicator: Adherence to federal and provincial employee rights regulations.
+   * Impact: Mitigates legal risks and ensures ethical business practices.
  
-· Security and Access Control:
-   o   Indicator: Effective implementation of access permissions and data security measures.
-   o   Impact: Protects sensitive information, ensures data integrity, and builds stakeholder trust.
+- Security and Access Control:
+   * Indicator: Effective implementation of access permissions and data security measures.
+   * Impact: Protects sensitive information, ensures data integrity, and builds stakeholder trust.
  
 The success of the project is intertwined with these indicators, which collectively contribute to achieving positive outcomes and meeting organizational objectives. The greatest impact on success lies in a holistic approach that considers both internal and external factors, aligning the project with the organization's overarching goals and regulatory requirements.
 
