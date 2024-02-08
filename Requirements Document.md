@@ -68,7 +68,7 @@ The proposed product is expected to address several challenges for CPBC in a mea
 - Enhancing Process Efficiency: This will be quantified by the time required to both submit a complaint and generate a corresponding ticket.
 - Minimizing Human Errors: The aim is to decrease the frequency of errors during the complaint handling process.
 - Elevating Customer Satisfaction: This will be assessed through post-complaint filing surveys, focusing on improving the overall user experience.
-- Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications.
+- Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications. This will allow for viewing of user permissions in this list.
 
 #### **2.4 Success Metrics**
 
