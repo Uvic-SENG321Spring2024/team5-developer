@@ -73,15 +73,15 @@ The proposed product is expected to address several challenges for CPBC in a mea
 #### **2.4 Success Metrics**
 
 - Accuracy of Complaint Handling:
-   * Indicator: Percentage of complaints accurately handled and resolved.
+   * Indicator: 80% of complaints accurately handled and resolved.
    * Impact: Ensures consumer satisfaction and regulatory compliance.
  
 - Efficiency in Workflow:
-   * Indicator: Reduction in the time taken to process and resolve complaints.
+   * Indicator: Reduction in the time taken to process and resolve complaints by 40%.
    * Impact: Increases overall efficiency, minimizes delays, and enhances responsiveness.
  
 - User Satisfaction:
-   * Indicator: Consumer satisfaction ratings through surveys.
+   * Indicator: Consumer satisfaction ratings through surveys increased by 90%.
    * Impact: Reflects the success of the system in meeting user needs and expectations.
  
 - Compliance with Regulations:
