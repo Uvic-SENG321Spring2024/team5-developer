@@ -130,6 +130,8 @@ The following limitations are imposed on the system:
 - Since data is confidential, developers must have the necessary permissions to access the two systems.
 - The system must operate on Windows operating system.
 
+The system has no exclusions.
+
 ## 4. Context Description
 
 #### **4.1 User Classes and Characteristics**
