@@ -65,7 +65,7 @@ Customer Requirements:
 
 The proposed product is expected to address several challenges for CPBC in a measurable manner. The primary business objectives targeted by the solution include:
 
-- Enhancing Process Efficiency: This will be quantified by the time required to both submit a complaint and generate a corresponding ticket.
+- Enhancing Process Efficiency: This will be quantified by the time required for LIO's to both submit a complaint and generate a corresponding ticket.
 - Minimizing Human Errors: The aim is to decrease the frequency of errors during the complaint handling process.
 - Elevating Customer Satisfaction: This will be assessed through post-complaint filing surveys, focusing on improving the overall user experience.
 - Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications.
