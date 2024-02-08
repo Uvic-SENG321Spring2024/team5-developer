@@ -156,6 +156,10 @@ Based on information collected during interviews with Consumer Protection BC, th
 
 While all three user classes interact with the system as a vital part in the complaint resolution process, LIOs will be held as a *prioritized user class* throughout development. This is because LIOs are the primary point of contact with the new system, and as such should be considered first when developing new features.
 
+**Consumer Exclusion:** 
+
+Note that consumers do not constitute a user class within the system. Consumers do not interact with the system interface, and no features will be developed with their needs in mind. Therefore, while consumers will be affected by the system, they will not be directly considered in its development. 
+
 #### **4.2 Operating Environment**
 
 The environment in which the product operates is as follows:
