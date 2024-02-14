@@ -129,7 +129,6 @@ The following limitations are imposed on the system:
 - No source code is available for the SysAid ticketing module.
 - Source code for the Iris complaints module cannot be modified.
 - Since data is confidential, developers must have the necessary permissions to access the two systems.
-- The system must operate on Windows operating system.
 
 The system has no exclusions.
 
@@ -170,7 +169,7 @@ The environment in which the product operates is as follows:
 - The software must coexist and directly interface with the complaint module within Iris.
 - The software must also coexist and directly interface with the SysAid ticketing system. 
 
-#### **4.3 Design and Implmentation Constraints**
+#### **4.3 Design and Implementation Constraints**
 
 When designing and implementing of the product, developers have a few limitations when implementing the product. Firstly, the developer must create a product to run on a Windows machine. The product has to communicate between Iris and SysAid, two different systems. It must communicate the information inputted into Iris to SysAid. Consumer Protection BC requires it to keep both applications due to Iris not having a ticketing system. Finally, account permissions and overall security of information being sent from Iris to SysAid must be kept secure, private and maintained through the automated process of transferring information.
 
