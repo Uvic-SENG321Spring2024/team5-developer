@@ -61,10 +61,10 @@ For the employees of CPBC, integrating current complaint management systems such
 
 The proposed product is expected to address several challenges for CPBC in a measurable manner. The primary business objectives targeted by the solution include:
 
-- Enhancing Process Efficiency: This will be quantified by the time required for LIO's to both submit a complaint and generate a corresponding ticket.
-- Minimizing Human Errors: The aim is to decrease the frequency of errors during the complaint handling process.
-- Elevating Customer Satisfaction: This will be assessed through post-complaint filing surveys, focusing on improving the overall user experience.
-- Streamlining User Access Permissions: The solution will maintain a user list with corresponding permissions, ensuring access is tailored to individual qualifications. This will allow for viewing of user permissions in this list.
+- Increase Process Efficiency by 25%. This will be quantified by tracking the time required to both submit a complaint and generate a corresponding ticket.
+- Reduce Human Errors by 40%. This will be quantified by the number of errors (typos or misunderstandings) that are submitted to the existing error log.
+- Increase Customer Satisfaction by 40%. This will be quantified by the positivity of surveys filled out after submitting a complaint.
+
 
 #### **2.4 Success Metrics**
 
