@@ -98,7 +98,7 @@ The success of the project is intertwined with these indicators, which collectiv
 
 #### **2.5 Product Vision Statement**
 
-The new product's long-term vision is to streamline complaint filing and fulfillment, addressing the underutilization of the current system. By integrating Iris and SysAid, we aim to reduce complaint processing time. Users will interact with the new, unified system instead of navigating both Iris and SysAid, ensuring a more efficient and user-friendly experience. The following diagram illustrates this proposed process:
+The new product's vision is to revolutionize government consumer protection processes by seamlessly integrating existing complaint management systems, fostering efficiency, transparency, and accountability. Through innovative technology solutions, the new product aspire to empower government agencies by creating a harmonized ecosystem where complaints are swiftly addressed, trust is bolstered, and satisfaction is paramount. The following diagram illustrates this proposed process:
 
 <p align="center">
    <img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd522fe6-d7f7-4aad-b2c9-13b2ad79119c">
