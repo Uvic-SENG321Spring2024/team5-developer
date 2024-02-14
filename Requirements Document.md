@@ -55,13 +55,7 @@ The existing procedure for submitting a complaint to CPBC is characterized by a 
 
 #### **2.2 Business Opportunity**
 
-The system that the CPBC is currently using is highly prone to inefficiencies and human error. Moreover, the current ticketing system is underutilized due to its inefficiency.  
-
-Customer Requirements:
-- Organizing the consumer complaint process to reduce the time taken for filing.
-- Minimize human error introduced by transferring data back and forth between two systems.
-- Simplify the user experience for the staff to improve overall satisfaction.
-- Ensure access permissions align with the security needs of the company.
+For the employees of CPBC, integrating current complaint management systems such as IRIS and SysAid offers a chance to streamline government consumer protection processes effectively. Through automated permissions management, improved user experience, and comprehensive data analytics, we can enhance efficiency and transparency, benefiting government agencies, businesses, and consumers. This presents an ideal avenue for technology providers to seize upon the rising demand for innovative solutions within the public sector.
 
 #### **2.3 Business Objectives**
 
