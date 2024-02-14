@@ -82,7 +82,7 @@ The proposed product is expected to address several challenges for CPBC in a mea
    * Indicator: Reduction in the time taken to process and resolve complaints by 40%.
    * Impact: Increases overall efficiency, minimizes delays, and enhances responsiveness.
  
-- User Satisfaction:
+- Employee Satisfaction:
    * Indicator: Consumer satisfaction ratings through surveys increased by 90%.
    * Impact: Reflects the success of the system in meeting user needs and expectations.
  
