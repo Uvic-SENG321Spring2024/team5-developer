@@ -114,14 +114,7 @@ The new product will interconnect these two features into one interface. This in
 
 #### **3.2 Project Scope**
 
-The objectives of the new interface are to:
-- Reduce the time spent by LIOs navigating between complaints and tickets modules.
-- Improve efficiency while finding and referencing past and current filed complaints.
-- Accurately manage complaints currently under investigation.
-- Assign investigators and LIOs to complaints.
-- Assign investigators and LIOs to tickets.
-- Keep track of progress on current tickets.
-- Notify LIOs and investigators when tickets are updated and resolved.
+The purpose of the new product is to connect Iris' complaints database and SysAid's ticketing system into one interface. This interface will reduce time spent by each LIO when creating, assigning, updating, and resolving complaints. Additionally, this interface will notify each assignee of a complaint when the complaint they are assigned to is updated or resolved.
 
 #### **3.3 Limitations and Exclusions**
 
