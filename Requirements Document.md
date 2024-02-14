@@ -116,8 +116,6 @@ The new product will interconnect these two features into one interface. This in
 
 The purpose of the new product is to connect Iris' complaints database and SysAid's ticketing system into one interface. This interface will reduce time spent by each LIO when creating, assigning, updating, and resolving complaints. Additionally, this interface will notify each assignee of a complaint when the complaint they are assigned to is updated or resolved.
 
-This interface would  the process creating, updating, and resolving complaints. 
-
 #### **3.3 Limitations and Exclusions**
 
 The following limitations are imposed on the system:
