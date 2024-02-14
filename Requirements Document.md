@@ -191,6 +191,7 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 | Term | Definition |
 | ---- | ---------- |
 | CPBC | Consumer Protection British Columbia. |
+| Investigator | The CPBC employee who examines and determines a resolution for the consumer complaint they are assigned to. Each investigator is part of a specific department, where each department handles a specific category of complaints. |
 | Iris | Software system used to input and store consumer complaints and their resolution status. |
 | LIO | Licensing Information Officer; the CPBC employee who first logs a consumer complaint. |
 | SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
