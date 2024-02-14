@@ -129,7 +129,6 @@ The following limitations are imposed on the system:
 - No source code is available for the SysAid ticketing module.
 - Source code for the Iris complaints module cannot be modified.
 - Since data is confidential, developers must have the necessary permissions to access the two systems.
-- The system must operate on Windows operating system.
 
 The system has no exclusions.
 
