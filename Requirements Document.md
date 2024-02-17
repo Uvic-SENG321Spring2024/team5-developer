@@ -52,8 +52,8 @@
 
 - [8. Software Quality Attributes](#8-software-quality-attributes)
 
-- [5. Appendix](#9-appendix)
-   * [5.2 Glossary of Terms](#91-glossary-of-terms)
+- [9. Appendix](#9-appendix)
+   * [9.1 Glossary of Terms](#91-glossary-of-terms)
 
 ## 1. Overview
 
