@@ -11,7 +11,8 @@
 | Initial Draft | 2024-01-30 | Document created | 1.0 |
 | Overview | 2024-01-31 | Overview section created | 1.1 |
 | Rough Draft | 2024-02-02 | Added sections 2 - 4 | 1.2 |
-| Final | 2024-02-04 | Final edit | 1.3 |
+| Iteration I Final | 2024-02-04 | Final edit | 1.3 |
+| Iteration II Draft | 2024-02-16 | Initial layout for Iteration II | 2.0 |
 
 ## Table of Contents
 
