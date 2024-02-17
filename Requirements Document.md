@@ -170,9 +170,56 @@ The only part of Iris’ system that the product will interact with is the compl
 
 Additionally, CPBC has access to the source code for Iris, but they do not have source code for SysAid. The product will need to automate the process of putting information into both Iris and SysAid. The dependency on SysAid and any limitations caused by a lack of access to source code may also necessitate changes to the requirements.
 
-## 5. Appendix
+## 5. System Features
 
-#### **5.1 Glossary of Terms**
+#### **5.1 \[System Feature 1 Name\]**
+
+Sample Text
+
+
+#### **5.2 \[System Feature 2 Name\]**
+
+Sample Text
+
+## 6. Data Requirements
+
+#### **6.1 Logical Data Model**
+
+Sample Text
+
+#### **6.2 Data Dictionary**
+
+Sample Text
+
+#### **6.3 Data Acquisition, Integrity, Retention, and Disposal**
+
+Sample Text
+
+## 7. External Interface Requirements
+
+#### **7.1 User Interfaces**
+
+Sample Text
+
+#### **7.2 Hardware Interfaces**
+
+Sample Text
+
+#### **7.3 Software Interfaces**
+
+Sample Text
+
+#### **7.4 Communication Interfaces**
+
+Sample Text
+
+## 8. Software Quality Attributes
+
+Sample Text
+
+## 9. Appendix
+
+#### **9.1 Glossary of Terms**
 
 | Term | Definition |
 | ---- | ---------- |
