@@ -235,6 +235,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 ## 8. Software Quality Attributes
 
 | Non-Functional Requirements | Acceptance Criteria |
+| --------------------------- | ------------------- |
 | Security | Each complaint must be secure and be seen by managers, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed. |
 | Reusability | The product must be able to be reused 100% of the time when the product is up and running to make each complaint that the LIO wants without disruptions and complications. |
 | Availability | The product must be available to communicate complaints 99.99% of the time of a year when an LIO is requested to make a complaint. |
