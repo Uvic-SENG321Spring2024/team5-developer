@@ -220,8 +220,6 @@ The compatibility for different types of **Attachments** in both objects is alre
 
 ### **Complaint Object (Iris)**
 
-<span style="font-size:0.7em;">
-
 | Data Element   | Field Description                                                                         | Data Type                                                                                                        | Input Format | Length | Allowed Values | Additional Notes                             |
 | ------------   | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------ | ------ | -------------- | -------------------------------------------- |
 | Complainant    | Holds all personal information of the consumer making the complaint                       | \+ First Name<br>\+ Last Name<br>\+ Email<br>\+ Phone<br>\+ Address<br>\+ Comments                               | —            | —      | —              | —                                            |
@@ -252,11 +250,7 @@ The compatibility for different types of **Attachments** in both objects is alre
 | Status         | Current status of the complaint, used to mark whether the complaint is open or resolved   | String    | Drop-Down              | 8 chars                                | “Open”<br>“Resolved”               | —                                                                                     |
 | Date Resolved  | Date that the complaint was marked as “Resolved”                                          | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31     | Autofilled with current date when status is set to “Resolved”                         |
 
-</span>
-
 ### **Ticket Object (SysAid)**
-
-<span style="font-size:0.7em;">
 
 | Data Element   | Field Description                                                                                      | Data Type | Input Format           | Length                                 | Allowed Values                            | Additional Notes                                                                      |
 | -------------- | ------------------------------------------------------------------------------------------------------ | --------- | ---------------------- | -------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
@@ -287,8 +281,6 @@ The compatibility for different types of **Attachments** in both objects is alre
 | Penalty Date   | Date that the penalty amount was received by CPBC                                                      | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | —                                                                                     |
 | Status         | Current status of the complaint, used to mark whether the complaint is open or resolved                | String    | Drop-Down              | 8 chars                                | “Open”<br>“Resolved”                      | —                                                                                     |
 | Date Resolved  | Date that the complaint was marked as “Resolved”                                                       | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | Autofilled with current date when status is set to “Resolved”                         |
-
-</span>
 
 #### **6.3 Data Acquisition, Integrity, Retention, and Disposal**
 
