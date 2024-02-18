@@ -239,7 +239,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | Security | Each complaint must be secure and be seen by managers, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed. |
 | Reusability | The product must be able to be reused 100% of the time when the product is up and running to make each complaint that the LIO wants without disruptions and complications. |
 | Availability | The product must be available to communicate complaints 99.99% of the time of a year when an LIO is requested to make a complaint. |
-| Performance | The product must be able to have one thousand LIO’s create complaints concurrently while having no problem communicating the ticket between SysAid and Iris when an LIO is processing a ticket. |
+| Performance | The product must be able to have 1000 LIO’s create complaints concurrently while having no problem communicating the ticket between SysAid and Iris when an LIO is processing a ticket. |
 | Efficiency | The product must be able to communicate information 99.99% of the time between SysAid and Iris when an LIO submits a complaint. |
 | Interoperability | The product must have a 99.99% ability to exchange and make use of the information between Iris and SysAid. |
 | Traceability | The product must be able to track where a complaint came from to where it was sent once assigned to an Investigator, within a minute. |
