@@ -209,7 +209,7 @@ Table 5.2.1 describes the functional requirements for the “assign a complaint�
 | REQ - 17 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall notify the Supervisor that the Investigator cannot be found. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** Inputting an unknown Investigator prompts an error to the Supervisor. |
 | REQ - 18 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall not assign the unknown Investigator to the specified complaint. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** The unknown Investigator is not assigned to the ticket in the SysAid database. The unknown Investigator is not assigned to the complaint in the Iris database. |
 
-Table 5.2: Functional Requirements for “assign a complaint” feature.
+Table 5.2.2: Functional Requirements for “assign a complaint” feature.
 
 #### 5.2.2 Associated Use Cases
 | Use Case 2 | Supervisor Assigning Complaint |
