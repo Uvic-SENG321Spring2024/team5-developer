@@ -193,7 +193,7 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 #### **5.1 Create a Complaint**
 The “create a complaint” feature is a high-priority feature. An LIO uses the “create a complaint” feature to create a new complaint in Iris and a corresponding ticket in SysAid. The LIO must be able to input all of the relevant complaint information into the system.
 
-##### 5.1.1 Functional Requirements
+#### 5.1.1 Functional Requirements
 Table 5.1 describes the functional requirements for the "create a complaint" feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
