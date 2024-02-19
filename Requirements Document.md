@@ -224,9 +224,10 @@ Table 5.1.2 outlines the primary use case associated with the "create a complain
 |**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
 |**Priority**       | High |
 
+#### 5.1.1: Use Case Diagram for Creating Complaint
+  
 <p align="center">
   <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
-  <br><i>Figure 5.1.1: Use Case Diagram for Creating Complaint</i>
 </p>
 Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
 
