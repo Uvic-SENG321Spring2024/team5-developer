@@ -209,7 +209,7 @@ Table 5.4 describes the functional requirements for the “view a complaint” f
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-25 | The system shall allow the following user-classes to view the contents of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system.<br> **Acceptance Test:** LIOs, Supervisors, and Investigators can access the "view a complaint" feature. |
-| REQ-26 | When an Investigator is selecting a complaint to view, the system shall strictly display complaints that are assigned to the Investigator. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo) |
+| REQ-26 | When an Investigator is selecting a complaint to view, the system shall strictly display complaints that are assigned to the Investigator. <br><br> **Rationale:** Elicitation with clients revealed that each Investigator does not require access to complaints they are not assigned to. <br> **Acceptance Test:** An Investigator is not able to view complaints that they are not assigned to. |
 | REQ-27 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that are currently under investigation over complaints that have already been resolved. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo) |
 | REQ-28 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that need urgent resolution over complaints that don’t require urgent resolution. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo) |
 
