@@ -37,7 +37,7 @@
    * [4.4 Assumptions and Dependencies](#44-assumptions-and-dependencies)
 
 - [5. System Features](#5-system-features)
-   * [5.1 \[System Feature 1 Name\]](#51-system-feature-1-name)
+   * [5.1 Create a Complaint](#51-create-a-complaint)
    * [5.2 \[System Feature 2 Name\]](#52-system-feature-2-name)
 
 - [6. Data Requirements](#6-data-requirements)
@@ -194,10 +194,46 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 
 ## 5. System Features
 
-#### **5.1 \[System Feature 1 Name\]**
+#### **5.1 Create a Complaint**
+The “create a complaint” feature is a high-priority feature. An LIO uses the “create a complaint” feature to create a new complaint in Iris and a corresponding ticket in SysAid. The LIO must be able to input all of the relevant complaint information into the system.
 
-Sample Text
+#### 5.1.1 Functional Requirements
+Table 5.1.1 describes the functional requirements for the "create a complaint" feature:
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-1   | The system shall allow an LIO to create a new complaint. <br><br> **Rationale:** The client's RFP states that LIOs create complaints. <br> **Acceptance Test:** An LIO is able to access and use the "create a complaint" feature.|
+| REQ-2   | The system shall allow a Supervisor to create a new complaint. <br><br> **Rationale:**The client's RFP states that Supervisors create complaints. <br> **Acceptance Test:** A Supervisor is able to access and use the "create a complaint" feature.  |
+| REQ-3   | The system shall not allow an Investigator to create a new complaint. <br><br> **Rationale:** Investigators do not create complaints, determined through elicitation with the client. <br> **Acceptance Test:** There is no possible way for an investigator to access or use the "create a complaint" feature.   |
+| REQ-4   | The system shall open a new complaint in the Iris database when an LIO or Supervisor creates a complaint. <br><br> **Rationale:** The client's RFP states that the system will still interface with Iris, and during the initial client interview it was stated that complaints must still be stored within Iris. <br> **Acceptance Test:** When an LIO or Supervisor creates a complaint, the complaint is added to and is visible in Iris' database.  |
+| REQ-5   | The system shall create a ticket in the SysAid database when an LIO or Supervisor creates a complaint. <br><br> **Rationale:** The client's RFP states that the system will still interface with SysAid. <br> **Acceptance Test:** When an LIO or Supervisor creates a complaint, a ticket containing the same information is created and visible in SysAid.  |
+| REQ-6   | The system shall allow an LIO or Supervisor to fill in the following required complaint information fields: Complainant Information, Respondent, Business Type, Act Violated, Description, File Attachments <br><br> **Rationale:** The client's RFP states that complaints filed into Iris and tickets created in SysAid have fillable fields, therefore the system must have input fields for complaints. <br> **Acceptance Test:** Information input into the "create a complaint" feature is visible in the corresponding complaint in Iris.  |
+| REQ-7   | The system shall allow an LIO or Supervisor to add file attachments which do not exceed 25 MB in size. <br><br> **Rationale:** Attaching files is a functionality that was broguht up during the initial client elicitation interview. <br> **Acceptance Test:** Attached files can not exceed 25 MB and must be standard format (.pdf, .png, .jpeg, .zip, .mp4, etc...). The linked attachments must be visible in the corresponding complaint in Iris. |
+| REQ- 8  | If an LIO or Supervisor attaches a file attachment which exceeds 25 MB in size, the system shall not attach the oversized file to the complaint.  <br><br> **Rationale:** Attaching files which exceed 25 MB in size may cause the Iris database to run out of storage space. <br> **Acceptance Test:** Attaching a file which exceeds 25 MB in size does not allow the LIO or Supervisor to complete the complaint creation process. |
+| REQ-9   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall notify the LIO or Supervisor that the inputted information is improperly formatted. <br><br> **Rationale:** The client-provided System Details document shows the specific accepted input type and format of each fillable field in Iris and SysAid.<br> **Acceptance Test:** An error message is received when an LIO or Supervisor puts information into the system in the wrong format.  |
+| REQ-10   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not create a new complaint until the inputted information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** The system will not accept complaint submissions with formatting errors.|
+| REQ-11    | If the Complainant has previously filed a complaint, the system shall allow the LIO or Supervisor to autofill the Complainant Information. <br><br> **Rationale:** The client-provided System Details document states that there is a database of previous complainants.  <br> **Acceptance Test:** When creating a complaint for a complainant who has previously filed a complaint, the LIO or Supervisor does not need to fill in the complainant’s information; instead, it is automatically filled into each complaint information field.
 
+
+#### 5.1.2 Associated Use Cases
+Table 5.1.2 outlines the primary use case associated with the "create a complaint" feature:
+| Use Case 1        | LIO Creating Complaint                     |
+|-------------------|--------------------------------------------|
+|**Primary Actor**  | LIO                                         |
+|**Description**    | The LIO creates a new complaint after a consumer provides the LIO with the necessary information to investigate a BC Consumer Protection law or regulation violation.|
+|**Trigger**        | Consumer contacts BC Consumer Protection to file a complaint. |
+|**Preconditions**  | 1. LIO's identity is authenticated within the system. |
+|**Postconditions** | 1. The complaint and its contents are stores in the Iris database. <br> 2. The corresponding ticket for the complaint is stored in the SysAid database. |
+|**Normal Flow**    | 1. LIO inputs the following information into the complaint: Complainant Information, Respondent, Business Type, Created By, Reviewed By, Nature, Description, File Attachments, Impact, Priority<br> 2. LIO confirms information and creates the complaint.|
+|**Alternate Flow** | If the Complainant has filed a complaint before: The system autofills the Complainant Information section of the complaint.|
+|**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
+|**Priority**       | High |
+
+#### 5.1.1: Use Case Diagram for Creating Complaint
+  
+<p align="center">
+  <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
+</p>
+Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
 
 #### **5.2 \[System Feature 2 Name\]**
 
