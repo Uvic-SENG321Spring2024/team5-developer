@@ -55,6 +55,8 @@
 
 - [9. Appendix](#9-appendix)
    * [9.1 Glossary of Terms](#91-glossary-of-terms)
+   * [9.2 List of Figures](#92-list-of-figures)
+   * [9.3 List of Tables](#93-list-of-tables)
 
 ## 1. Overview
 
@@ -111,6 +113,8 @@ The success of the project is intertwined with these indicators, which collectiv
 #### **2.5 Product Vision Statement**
 
 The new product's vision is to revolutionize government consumer protection processes by seamlessly integrating existing complaint management systems, fostering efficiency, transparency, and accountability. Through innovative technology solutions, the new product aspire to empower government agencies by creating a harmonized ecosystem where complaints are swiftly addressed, trust is bolstered, and satisfaction is paramount. The following diagram illustrates this proposed process:
+
+#### 2.5.1 Product Diagram
 
 <p align="center">
    <img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd522fe6-d7f7-4aad-b2c9-13b2ad79119c">
@@ -331,6 +335,8 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 ## 8. Software Quality Attributes
 
+#### 8.1.1 Criteria for Non-Functional Requirements
+
 | Non-Functional Requirements | Acceptance Criteria |
 | --------------------------- | ------------------- |
 | Security | Each complaint must be secure and be seen by managers, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed. |
@@ -358,3 +364,33 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
 | Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
+#### **9.2 List of Figures**
+* 2\. Business Requirements
+    * [2.5.1 Product Diagram](#251-product-diagram)
+* 5\. System Features
+    * 5\.1 Create a Complaint
+        * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-creating-a-complaint)
+    * 5\.2 Assign a Complaint
+        * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-a-complaint)
+* 6\. Data Requirements
+    * [6.1.1 Entity Relationship Diagram](#611-product-diagram)
+
+#### **9.3 List of Tables**
+* 5\. System Features
+    * 5\.1 Create a Complaint
+        * [5.1.1 Functional Requirements](#511-functional-requirements)
+        * [5.1.2 Associated Use Cases](#512-associated-use-cases)
+    * 5\.2 Assign a Complaint
+        * [5.2.1 Functional Requirements](#521-functional-requirements)
+        * [5.2.2 Associated Use Cases](#522-associated-use-cases)
+    * 5\.3 Update the Status of a Complaint
+        * [5.3.1 Functional Requirements](#531-functional-requirements)
+        * [5.3.2 Associated User Stories](#532-associated-user-stories)
+    * 5\.4 View a Complaint
+        * [5.4.1 Functional Requirements](#541-functional-requirements)
+        * [5.4.2 Associated User Stories](#542-associated-user-stories)
+* 6\. Data Requirements
+    * [6.2.1 Complaint Object (Iris)](#621-complaint-object-(iris))
+    * [6.2.2 Ticket Object (SysAid)](#622-ticket-object-(sysaid))
+* 8\. Software Quality Attributes
+    * [8.1.1 Criteria for Non-Functional Requirements](#811-criteria-for-non-functional-requirements)
