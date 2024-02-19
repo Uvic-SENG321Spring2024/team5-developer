@@ -196,7 +196,8 @@ Sample Text
 
 ### 5.2 Assign a Complaint
 The “assign” feature is a high-priority feature. Supervisors use the “assign” feature to assign an investigator to a complaint under investigation.
-5.2.1 Functional Requirements
+5.2.1 Functional Requirements  
+
 Table 5.2 describes the functional requirements for the “assign a complaint” feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
@@ -207,7 +208,6 @@ Table 5.2 describes the functional requirements for the “assign a complaint”
 | REQ - 16 | When a Supervisor assigns an Investigator to a complaint, the system shall assign the specified Investigator to the corresponding complaint within the Iris database. <br><br> **Rationale:** The client’s System Details document states that Iris has an Investigator field that must be filled with the assigned Investigator. <br> **Acceptance Test:** After a Supervisor assigns an Investigator to a complaint, the Investigator must be assigned to the corresponding complaint in the Iris database. |
 | REQ - 17 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall notify the Supervisor that the Investigator cannot be found. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** Inputting an unknown Investigator prompts an error to the Supervisor. |
 | REQ - 18 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall not assign the unknown Investigator to the specified complaint. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** The unknown Investigator is not assigned to the ticket in the SysAid database. The unknown Investigator is not assigned to the complaint in the Iris database. |
-| REQ - 19 | The system shall not allow a Supervisor to assign an invalid or non-existing complaint to an Investigator. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** No possible way for a Supervisor to assign an invalid complaint. If a Supervisor attempts to assign an invalid complaint, the system prompts an error to the Supervisor. |
 
 Table 5.2: Functional Requirements for “assign a complaint” feature.
 
