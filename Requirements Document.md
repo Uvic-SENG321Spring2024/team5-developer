@@ -405,7 +405,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
     * [2.5.1 Product Diagram](#251-product-diagram)
 * 5\. System Features
     * 5\.1 Create a Complaint
-        * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-creating-a-complaint)
+        * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-a-complaint)
     * 5\.2 Assign a Complaint
         * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-a-complaint)
 * 6\. Data Requirements
