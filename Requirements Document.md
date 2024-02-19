@@ -205,7 +205,7 @@ Sample Text
 The “view” complaint is a high-priority feature. An Investigator needs to be able to view the contents of a complaint to inform their investigations. An LIO needs to be able to view the complaint resolution.  
 
 #### 5.4.1 Functional Requirements
-Table 5.4 describes the functional requirements for the “view a complaint” feature:
+Table 5.4.1 describes the functional requirements for the “view a complaint” feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-25 | The system shall allow the following user-classes to view the contents of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system.<br> **Acceptance Test:** LIOs, Supervisors, and Investigators can access the "view a complaint" feature. |
