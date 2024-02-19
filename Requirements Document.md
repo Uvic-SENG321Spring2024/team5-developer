@@ -211,7 +211,7 @@ Sample Text
 
 Figure 6.1.1 depicts the data relationships between the entities in the system. 
 
-"Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. It is the layer that seperates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
+"Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. It is the layer that separates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
 
 #### **6.2 Data Dictionary**
 
