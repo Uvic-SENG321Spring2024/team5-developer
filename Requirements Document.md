@@ -205,7 +205,9 @@ Sample Text
 
 #### 6.1.1 Entity Relationship Diagram
 
-![erd_2_seng321](https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/25752638/ec07ec2d-984d-4818-83e8-7f416a357f49)
+<p align="center">
+   <img width="523" alt="ERD" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/25752638/ec07ec2d-984d-4818-83e8-7f416a357f49">
+</p>
 
 Figure 6.1.1 depicts the data relationships between the entities in the system. 
 
