@@ -409,7 +409,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
     * 5\.2 Assign a Complaint
         * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-a-complaint)
 * 6\. Data Requirements
-    * [6.1.1 Entity Relationship Diagram](#611-product-diagram)
+    * [6.1.1 Entity Relationship Diagram](#611-entity-relationship-diagram)
 
 #### **9.3 List of Tables**
 * 5\. System Features
