@@ -234,12 +234,9 @@ Table 5.1.2 outlines the primary use case associated with the "create a complain
   
 <p align="center">
   <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
+   <br><i>Figure 5.2.1: Use case diagram for creating a new complaint </i>
 </p>
 Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
-
-#### **5.2 \[System Feature 2 Name\]**
-
-Sample Text
 
 ### 5.2 Assign a Complaint
 The “assign” feature is a high-priority feature. Supervisors use the “assign” feature to assign an Investigator to a complaint under investigation.  
@@ -272,12 +269,34 @@ Table 5.2.2 outlines the primary use case for the “assign a complaint” featu
 **Exceptions** | - If the Investigator being assigned does not exist: The system notifies the Supervisor, does not assign the unknown Investigator to the complaint, and does not allow the change to be confirmed or saved.
 **Priority** | High
 
+#### 5.2.1 Use Case Diagram for Assigning Complaint
 <p = align="center">
 <img width="507" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd6b9ac3-8779-4b2a-a61e-6ac42e99e276">
 <br><i>Figure 5.2.1: Use case diagram for assigning a complaint </i>
 </p>
 Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
 
+
+### 5.3 \[Update the Status of a Complaint\]
+The “update the status of a complaint” feature is a high-priority feature. An LIO will be able to use the feature to add new information to a complaint. An Investigator will be able to use the feature to document the investigation and resolution of a complaint.  
+
+#### 5.3.1 Functional Requirements
+Table 5.3.1 describes the functional requirements for the “update the status of a complaint” feature:  
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-19 | The system shall allow the following user-classes to update the status of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system. <br> **Acceptance Test:**  LIOs, Supervisors, and Investigators can access the "update a complaint" feature. |
+| REQ-20 | The system shall allow an LIO, Supervisor, or Investigator to update the following complaint information fields of a complaint: <br> - Complainant's First Name <br> -  Complainant's Last Name <br> -  Complainant's Email Address <br> -  Complainant's Phone Number <br> -  Complainant's Address (including: Street, City, Province, Postal Code, Country) <br> - Complainant Comments <br> - Respondent (licensed business) <br> - Business Type <br> - Act Violated <br> - Description <br> - File Attachments <br> - Resolution Status <br> - Amount Credited or Refunded to Consumer <br> - Date of Credit or Refund to Consumer <br> - Penalty Amount for Respondent <br> - Penalty Payment Received Date <br> - Status of Complaint (Open, Resolved) <br><br> **Rationale:** The information fields listed above are required to create a complaint within the Iris database and a corresponding ticket within the SysAid database. <br> **Acceptance Test:** An LIO, Supervisor, or Investigator is able to input information provided by the Complainant into the complaint. |
+| REQ-21 | The system shall update the corresponding complaint’s contents in the Iris database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states complaints must be stored within the Iris database.<br> **Acceptance Test:** The corresponding complaint in Iris contains the updated information. |
+| REQ-22 | The system shall update the corresponding ticket’s status in the SysAid database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states tickets which correspond to a complaint must be stored within the SysAid database. <br> **Acceptance Test:** The corresponding ticket in SysAid contains the updated information. |
+| REQ-23 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
+| REQ-24| If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
+
+Table 5.3.2: Functional Requirements
+
+#### 5.3.2 Associated User Stories
+The following user stories describe the functional requirements associated with the “update” feature:
+- As an LIO, I want to update an existing complaint’s contents with additional information that was provided by the Complainant.
+- As an Investigator, I want to update a complaint I am investigating with my final resolution for the complaint.
 
 ### 5.4 View a Complaint
 The “view” complaint is a high-priority feature. An Investigator needs to be able to view the contents of a complaint to inform their investigations. An LIO needs to be able to view the complaint resolution.  
@@ -297,30 +316,7 @@ Table 5.4.2: Functional Requirements
 The following user stories describe the functional requirements associated with the “view” feature:
 - As an Investigator, I want to view the contents of a complaint that I am assigned to so I can determine the resolution for the complaint.
 - As a Supervisor, I want to view the contents of a complaint to determine the current resolution status of the investigation for the complaint.
-- As an LIO, I want to view the contents of a complaint to ensure the complaint contains all the necessary information provided by the complainant.
-
-
-### 5.3 \[Update the Status of a Complaint\]
-The “update the status of a complaint” feature is a high-priority feature. An LIO will be able to use the feature to add new information to a complaint. An Investigator will be able to use the feature to document the investigation and resolution of a complaint.  
-
-#### 5.3.1 Functional Requirements
-Table 5.3.1 describes the functional requirements for the “update the status of a complaint” feature:  
-| ID      | Requirement                                                |
-|---------|------------------------------------------------------------|
-| REQ-19 | The system shall allow the following user-classes to update the status of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system. <br> **Acceptance Test:**  LIOs, Supervisors, and Investigators can access the "update a complaint" feature. |
-| REQ-20 | The system shall allow an LIO, Supervisor, or Investigator to update the following complaint information fields of a complaint: <br> - Complainant's First Name <br> -  Complainant's Last Name <br> -  Complainant's Email Address <br> -  Complainant's Phone Number <br> -  Complainant's Address (including: Street, City, Province, Postal Code, Country) <br> - Complainant Comments <br> - Respondent (licensed business) <br> - Business Type <br> - Act Violated <br> - Description <br> - File Attachments <br> - Resolution Status <br> - Amount Credited or Refunded to Consumer <br> - Date of Credit or Refund to Consumer <br> - Penalty Amount for Respondent <br> - Penalty Payment Received Date <br> - Status of Complaint (Open, Resolved) <br><br> **Rationale:** The information fields listed above are required to create a complaint within the Iris database and a corresponding ticket within the SysAid database. <br> **Acceptance Test:** An LIO, Supervisor, or Investigator is able to input information provided by the Complainant into the complaint. |
-| REQ-21 | The system shall update the corresponding complaint’s contents in the Iris database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states complaints must be stored within the Iris database.<br> **Acceptance Test:** The corresponding complaint in Iris contains the updated information. |
-| REQ-22 | The system shall update the corresponding ticket’s status in the SysAid database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states tickets which correspond to a complaint must be stored within the SysAid database. <br> **Acceptance Test:** The corresponding ticket in SysAid contains the updated information. |
-| REQ-23 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
-| REQ-24| If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
-
-Table 5.3.2: Functional Requirements
-
-
-#### 5.3.2 Associated User Stories
-The following user stories describe the functional requirements associated with the “update” feature:
-- As an LIO, I want to update an existing complaint’s contents with additional information that was provided by the complainant.
-- As an Investigator, I want to update a complaint I am investigating with my final resolution for the complaint.
+- As an LIO, I want to view the contents of a complaint to ensure the complaint contains all the necessary information provided by the Complainant.
 
 ## 6. Data Requirements
 
@@ -330,6 +326,7 @@ The following user stories describe the functional requirements associated with 
 
 <p align="center">
    <img width="523" alt="ERD" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/25752638/ec07ec2d-984d-4818-83e8-7f416a357f49">
+   <br><i>Figure 6.1.1: ERD diagram. </i>
 </p>
 
 Figure 6.1.1 depicts the data relationships between the entities in the system. 
@@ -488,7 +485,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
     * 5\.1 Create a Complaint
         * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-complaint)
     * 5\.2 Assign a Complaint
-        * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-a-complaint)
+        * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-complaint)
 * 6\. Data Requirements
     * [6.1.1 Entity Relationship Diagram](#611-entity-relationship-diagram)
 
@@ -502,10 +499,8 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
         * [5.2.2 Associated Use Cases](#522-associated-use-cases)
     * 5\.3 Update the Status of a Complaint
         * [5.3.1 Functional Requirements](#531-functional-requirements)
-        * [5.3.2 Associated User Stories](#532-associated-user-stories)
     * 5\.4 View a Complaint
         * [5.4.1 Functional Requirements](#541-functional-requirements)
-        * [5.4.2 Associated User Stories](#542-associated-user-stories)
 * 6\. Data Requirements
     * [6.2.1 Complaint Object (Iris)](#621-complaint-object-iris)
     * [6.2.2 Ticket Object (SysAid)](#622-ticket-object-sysaid)
