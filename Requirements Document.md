@@ -209,9 +209,10 @@ Table 5.2.1 describes the functional requirements for the “assign a complaint�
 | REQ - 17 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall notify the Supervisor that the Investigator cannot be found. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** Inputting an unknown Investigator prompts an error to the Supervisor. |
 | REQ - 18 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall not assign the unknown Investigator to the specified complaint. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** The unknown Investigator is not assigned to the ticket in the SysAid database. The unknown Investigator is not assigned to the complaint in the Iris database. |
 
-Table 5.2.2: Functional Requirements for “assign a complaint” feature.
 
 #### 5.2.2 Associated Use Cases
+
+Table 5.2.2 outlines the primary use case for the “assign a complaint” feature.
 | Use Case 2 | Supervisor Assigning Complaint |
 |-------------------|--------------------------------------------|
 **Primary Actor** | Supervisor
@@ -224,11 +225,11 @@ Table 5.2.2: Functional Requirements for “assign a complaint” feature.
 **Exceptions** | - If the Investigator being assigned does not exist: The system notifies the Supervisor, does not assign the unknown Investigator to the complaint, and does not allow the change to be confirmed or saved.
 **Priority** | High
 
-#### 5.2.1 Use Case Diagram: Assigning a Complaint
-
 <p = align="center">
 <img width="830" alt="Assign  use case diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/f331deab-c1d9-481b-81b8-9ce8a33e8f5c">
+<br><i>Figure 5.2.1: Use case diagram for assigning a complaint </i>
 </p>
+Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
 
 ## 6. Data Requirements
 
