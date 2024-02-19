@@ -208,9 +208,7 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 | REQ-9   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall notify the LIO or Supervisor that the inputted information is improperly formatted. <br><br> **Rationale:** The client-provided System Details document shows the specific accepted input type and format of each fillable field in Iris and SysAid.<br> **Acceptance Test:** An error message is received when an LIO or Supervisor puts information into the system in the wrong format.  |
 | REQ-10   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not create a new complaint until the inputted information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** The system will not accept complaint submissions with formatting errors.|
 | REQ-11    | If the Complainant has previously filed a complaint, the system shall allow the LIO or Supervisor to autofill the Complainant Information. <br><br> **Rationale:** The client-provided System Details document states that there is a database of previous complainants.  <br> **Acceptance Test:** When creating a complaint for a complainant who has previously filed a complaint, the LIO or Supervisor does not need to fill in the complainant’s information; instead, it is automatically filled into each complaint information field.
-<p align="center">
-  <img width="728" alt="Create  use case diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/f4062aca-7342-4992-9c9e-ca57f8255ce6">
-</p>
+
 
 ##### 5.1.2 Associated Use Cases
 | Use Case 1        | LIO Creating Complaint                     |
@@ -225,6 +223,9 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 |**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
 |**Priority**       | High |
 
+<p align="center">
+  <img width="728" alt="Create  use case diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/f4062aca-7342-4992-9c9e-ca57f8255ce6">
+</p>
 
 #### **5.2 \[System Feature 2 Name\]**
 
