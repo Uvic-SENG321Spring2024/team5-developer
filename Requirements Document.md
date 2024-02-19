@@ -203,7 +203,15 @@ Sample Text
 
 #### **6.1 Logical Data Model**
 
-Sample Text
+#### 6.1.1 Entity Relationship Diagram
+
+<p align="center">
+   <img width="523" alt="ERD" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/25752638/ec07ec2d-984d-4818-83e8-7f416a357f49">
+</p>
+
+Figure 6.1.1 depicts the data relationships between the entities in the system. 
+
+"Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. It is the layer that separates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
 
 #### **6.2 Data Dictionary**
 
