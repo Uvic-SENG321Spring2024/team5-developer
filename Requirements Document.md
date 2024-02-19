@@ -224,6 +224,8 @@ Table 5.2.2: Functional Requirements for “assign a complaint” feature.
 **Exceptions** | - If the Investigator being assigned does not exist: The system notifies the Supervisor, does not assign the unknown Investigator to the complaint, and does not allow the change to be confirmed or saved.
 **Priority** | High
 
+#### 5.2.1 Use Case Diagram: Assigning a Complaint
+
 <p = align="center">
 <img width="830" alt="Assign  use case diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/f331deab-c1d9-481b-81b8-9ce8a33e8f5c">
 </p>
