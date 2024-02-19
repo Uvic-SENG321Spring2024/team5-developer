@@ -33,7 +33,7 @@
 - [4. Context Description](#4-context-description)
    * [4.1 User Classes and Characteristics](#41-user-classes-and-characteristics)
    * [4.2 Operating Environment](#42-operating-environment)
-   * [4.3 Design and Implmentation Constraints](#43-design-and-implmentation-constraints)
+   * [4.3 Design and Implementation Constraints](#43-design-and-implementation-constraints)
    * [4.4 Assumptions and Dependencies](#44-assumptions-and-dependencies)
 
 - [5. System Features](#5-system-features)
