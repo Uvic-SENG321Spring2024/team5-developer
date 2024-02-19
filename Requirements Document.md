@@ -194,7 +194,7 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 The “create a complaint” feature is a high-priority feature. An LIO uses the “create a complaint” feature to create a new complaint in Iris and a corresponding ticket in SysAid. The LIO must be able to input all of the relevant complaint information into the system.
 
 #### 5.1.1 Functional Requirements
-Table 5.1 describes the functional requirements for the "create a complaint" feature:
+Table 5.1.1 describes the functional requirements for the "create a complaint" feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-1   | The system shall allow an LIO to create a new complaint. <br><br> **Rationale:** The client's RFP states that LIOs create complaints. <br> **Acceptance Test:** An LIO is able to access and use the "create a complaint" feature.|
@@ -211,6 +211,7 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 
 
 #### 5.1.2 Associated Use Cases
+Table 5.1.2 outlines the primary use case associated with the "create a complaint" feature:
 | Use Case 1        | LIO Creating Complaint                     |
 |-------------------|--------------------------------------------|
 |**Primary Actor**  | LIO                                         |
@@ -223,11 +224,11 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 |**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
 |**Priority**       | High |
 
-#### 5.1.1 Use Case Diagram: Creating a Complaint
-
 <p align="center">
   <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
+  <br><i>Figure 5.1.1: Use Case Diagram for Creating Complaint</i>
 </p>
+Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
 
 #### **5.2 \[System Feature 2 Name\]**
 
