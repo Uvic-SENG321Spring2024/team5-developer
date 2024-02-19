@@ -12,6 +12,7 @@
 | Overview | 2024-01-31 | Overview section created | 1.1 |
 | Rough Draft | 2024-02-02 | Added sections 2 - 4 | 1.2 |
 | Iteration I Final | 2024-02-04 | Final edit | 1.3 |
+| Client Review | 2024-02-13 | Edits according to feedback from clients | 1.3.1 |
 | Iteration II Started | 2024-02-16 | Initial layout for Iteration II | 2.0 |
 | Rough Draft | 2024-02-17 | Added sections 5 - 8 | 2.1 |
 | Revision | 2024-02-18 | Group review on sections 5 - 8 | 2.2 |
