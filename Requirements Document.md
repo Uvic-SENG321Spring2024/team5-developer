@@ -268,9 +268,32 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
 #### **9.2 List of Figures**
-- [2. Business Requirements]
-   * [Product Diagram](#251-product-diagram)
+- 2. Business Requirements
+  * [2.5.1 Product Diagram](#251-product-diagram)
+- 5. System Features
+  * 5.1 Create a Complaint
+      * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram:-creating-a-complaint)
+  * 5.2 Assign a Complaint
+      * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram:-assigning-a-complaint)
+- 6. Data Requirements
+  * [6.1.1 Entity Relationship Diagram](#611-product-diagram)
 
 #### **9.3 List of Tables**
-- [8. Software Quality Attributes]
-   * [Criteria for Non-Functional Requirements](#811-criteria-for-non-functional-requirements)
+- 5. System Features
+  * 5.1 Create a Complaint
+      * [5.1.1 Functional Requirements](#511-functional-requirements)
+      * [5.1.2 Associated Use Cases](#512-associated-use-cases)
+  * 5.2 Assign a Complaint
+      * [5.2.1 Functional Requirements](#521-functional-requirements)
+      * [5.2.2 Associated Use Cases](#522-associated-use-cases)
+  * 5.3 Update the Status of a Complaint
+      * [5.3.1 Functional Requirements](#531-functional-requirements)
+      * [5.3.2 Associated User Stories](#532-associated-user-stories)
+  * 5.4 View a Complaint
+      * [5.4.1 Functional Requirements](#541-functional-requirements)
+      * [5.4.2 Associated User Stories](#542-associated-user-stories)
+- 6. Data Requirements
+  * [6.2.1 Complaint Object (Iris)](#621-complaint-object-(iris))
+  * [6.2.2 Ticket Object (SysAid)](#622-ticket-object-(sysaid))
+- 8. Software Quality Attributes
+  * [8.1.1 Criteria for Non-Functional Requirements](#811-criteria-for-non-functional-requirements)
