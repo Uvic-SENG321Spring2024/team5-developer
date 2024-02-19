@@ -55,6 +55,8 @@
 
 - [9. Appendix](#9-appendix)
    * [9.1 Glossary of Terms](#91-glossary-of-terms)
+   * [9.2 List of Figures](#92-glossary-of-figures)
+   * [9.3 List of Tables](#93-glossary-of-tables)
 
 ## 1. Overview
 
@@ -111,6 +113,8 @@ The success of the project is intertwined with these indicators, which collectiv
 #### **2.5 Product Vision Statement**
 
 The new product's vision is to revolutionize government consumer protection processes by seamlessly integrating existing complaint management systems, fostering efficiency, transparency, and accountability. Through innovative technology solutions, the new product aspire to empower government agencies by creating a harmonized ecosystem where complaints are swiftly addressed, trust is bolstered, and satisfaction is paramount. The following diagram illustrates this proposed process:
+
+#### 2.5.1 Product Diagram
 
 <p align="center">
    <img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd522fe6-d7f7-4aad-b2c9-13b2ad79119c">
@@ -234,6 +238,8 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 ## 8. Software Quality Attributes
 
+#### 8.1.1 Criteria for Non-Functional Requirements
+
 | Non-Functional Requirements | Acceptance Criteria |
 | --------------------------- | ------------------- |
 | Security | Each complaint must be secure and be seen by managers, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed. |
@@ -261,3 +267,10 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
 | Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
+#### **9.2 List of Figures**
+- [2. Business Requirements]
+   * [Product Diagram](#251-product-diagram)
+
+#### **9.3 List of Tables**
+- [8. Software Quality Attributes]
+   * [Criteria for Non-Functional Requirements](#811-criteria-for-non-functional-requirements)
