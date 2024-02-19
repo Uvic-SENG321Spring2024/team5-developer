@@ -204,7 +204,7 @@ Sample Text
 ### 5.4 View a Complaint
 The “view” complaint is a high-priority feature. An Investigator needs to be able to view the contents of a complaint to inform their investigations. An LIO needs to be able to view the complaint resolution.  
 
-#### 5.4.1 Function Requirements
+#### 5.4.1 Functional Requirements
 Table 5.4 describes the functional requirements for the “view a complaint” feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
