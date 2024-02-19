@@ -210,7 +210,7 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 | REQ-11    | If the Complainant has previously filed a complaint, the system shall allow the LIO or Supervisor to autofill the Complainant Information. <br><br> **Rationale:** The client-provided System Details document states that there is a database of previous complainants.  <br> **Acceptance Test:** When creating a complaint for a complainant who has previously filed a complaint, the LIO or Supervisor does not need to fill in the complainant’s information; instead, it is automatically filled into each complaint information field.
 
 
-##### 5.1.2 Associated Use Cases
+#### 5.1.2 Associated Use Cases
 | Use Case 1        | LIO Creating Complaint                     |
 |-------------------|--------------------------------------------|
 |**Primary Actor**  | LIO                                         |
