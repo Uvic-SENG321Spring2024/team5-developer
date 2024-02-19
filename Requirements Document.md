@@ -212,8 +212,8 @@ Sample Text
 #### **6.3 Data Acquisition, Integrity, Retention, and Disposal**
 
 Data Acquisition
-- Employees collect data via phone and email interactions with consumers, adhering to ethical standards and ensuring the secure acquisition of information. 
-- They confirm the accuracy and completeness of the data obtained, minimizing the risk of errors or inaccuracies. 
+- LIOs collect data via phone and email interactions with consumers, adhering to ethical standards and ensuring the secure acquisition of information. 
+- LIOs confirm the accuracy and completeness of the data obtained, minimizing the risk of errors or inaccuracies. 
 - Utilizing secure communication channels, such as encrypted email services or secure phone lines, further enhances data integrity and confidentiality during the acquisition process. 
 - By prioritizing ethical practices and implementing stringent security measures, the system maintains the trust and reliability of the acquired data, laying a solid foundation for effective complaint resolution and analysis.
 
