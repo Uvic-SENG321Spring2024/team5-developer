@@ -55,8 +55,8 @@
 
 - [9. Appendix](#9-appendix)
    * [9.1 Glossary of Terms](#91-glossary-of-terms)
-   * [9.2 List of Figures](#92-glossary-of-figures)
-   * [9.3 List of Tables](#93-glossary-of-tables)
+   * [9.2 List of Figures](#92-list-of-figures)
+   * [9.3 List of Tables](#93-list-of-tables)
 
 ## 1. Overview
 
