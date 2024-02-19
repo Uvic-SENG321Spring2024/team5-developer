@@ -215,7 +215,7 @@ Table 5.3.1 describes the functional requirements for the “update the status o
 | REQ-23 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
 | REQ-24| If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
 
-Table 5.3: Functional Requirements for “update the status of a complaint” feature.  
+Table 5.3.2: Functional Requirements
 
 
 #### 5.3.2 Associated User Stories
