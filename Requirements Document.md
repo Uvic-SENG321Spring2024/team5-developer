@@ -218,7 +218,7 @@ Note that the **Allowed Values** field is omitted for drop-down menus with a pre
 
 The compatibility for different types of **Attachments** in both objects is already handled by the pre-existing software. These can be handled as raw data and passed directly from the system to the existing software as long as they are within the accepted file size.
 
-#### **Complaint Object (Iris)**
+#### 6.2.1 **Complaint Object (Iris)**
 
 | Data Element   | Field Description                                                                         | Data Type                                                                                                        | Input Format | Length | Allowed Values | Additional Notes                             |
 | ------------   | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------ | ------ | -------------- | -------------------------------------------- |
