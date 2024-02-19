@@ -219,7 +219,7 @@ Data Acquisition
 Data Retention and Disposal
 - Once the complaints have been resolved, the data is securely retained within the Iris in accordance with established retention policies. 
 - Historical complaint records remain accessible for reference purposes, aiding in trend analysis, regulatory compliance, and quality assurance efforts.
-- While the data is not disposed of, measures are in place to protect it from unauthorized access or misuse, thereby upholding the trust and integrity of the complaint management system.
+- While the data is not disposed of, encryption and access controls are in place to protect it from unauthorized access or misuse, thereby upholding the trust and integrity of the complaint management system.
 
 Data Integrity:
 - The system must validate incoming data on a regular basis and make sure it is free from errors or inconsistencies.
