@@ -38,7 +38,7 @@
 
 - [5. System Features](#5-system-features)
    * [5.1 Create a Complaint](#51-create-a-complaint)
-   * [5.2 \[System Feature 2 Name\]](#52-system-feature-2-name)
+   * [5.2 Assign a Complaint](#52-assign-a-complaint)
    * [5.4 View a Complaint](#54-view-a-complaint)
 
 - [6. Data Requirements](#6-data-requirements)
@@ -240,6 +240,43 @@ Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
 
 Sample Text
 
+### 5.2 Assign a Complaint
+The “assign” feature is a high-priority feature. Supervisors use the “assign” feature to assign an Investigator to a complaint under investigation.  
+#### 5.2.1 Functional Requirements  
+
+Table 5.2.1 describes the functional requirements for the “assign a complaint” feature:
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-12  | The system shall allow a Supervisor to assign an Investigator to a complaint. <br><br>**Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** Supervisors may use the “assign” feature to assign an Investigator to a complaint.|
+| REQ - 13 | The system shall not allow an LIO to assign an Investigator to a complaint. <br><br> **Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** No possible way for an LIO to assign an Investigator to a complaint. |
+| REQ - 14 | The system shall not allow an Investigator to assign an Investigator to a complaint. <br><br> **Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** No possible way for an Investigator to assign an Investigator to a complaint. |
+| REQ - 15 | When a Supervisor assigns an Investigator to a complaint, the system shall assign the specified Investigator to the corresponding ticket within the SysAid database. <br><br> **Rationale:** The client’s System Details document states that SysAid has an Assigned To field that must be filled with the assigned Investigator. <br> **Acceptance Test:** After a Supervisor assigns an Investigator to a complaint, the Investigator must be assigned to the corresponding ticket in the SysAid database. |
+| REQ - 16 | When a Supervisor assigns an Investigator to a complaint, the system shall assign the specified Investigator to the corresponding complaint within the Iris database. <br><br> **Rationale:** The client’s System Details document states that Iris has an Investigator field that must be filled with the assigned Investigator. <br> **Acceptance Test:** After a Supervisor assigns an Investigator to a complaint, the Investigator must be assigned to the corresponding complaint in the Iris database. |
+| REQ - 17 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall notify the Supervisor that the Investigator cannot be found. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** Inputting an unknown Investigator prompts an error to the Supervisor. |
+| REQ - 18 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall not assign the unknown Investigator to the specified complaint. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** The unknown Investigator is not assigned to the ticket in the SysAid database. The unknown Investigator is not assigned to the complaint in the Iris database. |
+
+
+#### 5.2.2 Associated Use Cases
+
+Table 5.2.2 outlines the primary use case for the “assign a complaint” feature.
+| Use Case 2 | Supervisor Assigning Complaint |
+|-------------------|--------------------------------------------|
+**Primary Actor** | Supervisor
+**Description** | The Supervisor assigns a complaint to an Investigator.
+**Trigger** | A complaint has been filed but is unassigned.
+**Preconditions** | - Supervisor’s identity is authenticated within the system <br> - There exists a complaint without an assigned Investigator.
+**Postconditions** | - The complaint in Iris has the updated information. <br> - The ticket in SysAid has the updated information. <br> - The Investigator has been notified of a new assigned ticket.
+**Normal Flow** | - Supervisor views an existing complaint. <br> - Supervisor inputs the assigned Investigator into the Investigator field of the complaint. <br> - The system automatically fills in the Department field of the complaint with the department associated with the assigned Investigator. <br> - Supervisor confirms the change.
+**Alternate Flow** | None
+**Exceptions** | - If the Investigator being assigned does not exist: The system notifies the Supervisor, does not assign the unknown Investigator to the complaint, and does not allow the change to be confirmed or saved.
+**Priority** | High
+
+<p = align="center">
+<img width="507" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd6b9ac3-8779-4b2a-a61e-6ac42e99e276">
+<br><i>Figure 5.2.1: Use case diagram for assigning a complaint </i>
+</p>
+Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
+
 
 ### 5.4 View a Complaint
 The “view” complaint is a high-priority feature. An Investigator needs to be able to view the contents of a complaint to inform their investigations. An LIO needs to be able to view the complaint resolution.  
@@ -260,7 +297,6 @@ The following user stories describe the functional requirements associated with 
 - As an Investigator, I want to view the contents of a complaint that I am assigned to so I can determine the resolution for the complaint.
 - As a Supervisor, I want to view the contents of a complaint to determine the current resolution status of the investigation for the complaint.
 - As an LIO, I want to view the contents of a complaint to ensure the complaint contains all the necessary information provided by the complainant.
-
 
 
 ## 6. Data Requirements
