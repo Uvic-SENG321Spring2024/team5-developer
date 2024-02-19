@@ -205,7 +205,7 @@ Sample Text
 The “update the status of a complaint” feature is a high-priority feature. An LIO will be able to use the feature to add new information to a complaint. An Investigator will be able to use the feature to document the investigation and resolution of a complaint.  
 
 #### 5.3.1 Functional Requirements
-Table 5.3 describes the functional requirements for the “update the status of a complaint” feature:  
+Table 5.3.1 describes the functional requirements for the “update the status of a complaint” feature:  
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-19 | The system shall allow the following user-classes to update the status of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo). |
