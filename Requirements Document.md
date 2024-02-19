@@ -197,9 +197,11 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 ## 5. System Features
 
 #### **5.1 Create a Complaint**
+
 The “create a complaint” feature is a high-priority feature. An LIO uses the “create a complaint” feature to create a new complaint in Iris and a corresponding ticket in SysAid. The LIO must be able to input all of the relevant complaint information into the system.
 
 #### 5.1.1 Functional Requirements
+
 Table 5.1.1 describes the functional requirements for the "create a complaint" feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
@@ -215,9 +217,10 @@ Table 5.1.1 describes the functional requirements for the "create a complaint" f
 | REQ-10   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not create a new complaint until the inputted information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** The system will not accept complaint submissions with formatting errors.|
 | REQ-11    | If the Complainant has previously filed a complaint, the system shall allow the LIO or Supervisor to autofill the Complainant Information. <br><br> **Rationale:** The client-provided System Details document states that there is a database of previous complainants.  <br> **Acceptance Test:** When creating a complaint for a complainant who has previously filed a complaint, the LIO or Supervisor does not need to fill in the complainant’s information; instead, it is automatically filled into each complaint information field.
 
-
 #### 5.1.2 Associated Use Cases
+
 Table 5.1.2 outlines the primary use case associated with the "create a complaint" feature:
+
 | Use Case 1        | LIO Creating Complaint                     |
 |-------------------|--------------------------------------------|
 |**Primary Actor**  | LIO                                         |
@@ -236,13 +239,17 @@ Table 5.1.2 outlines the primary use case associated with the "create a complain
   <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
    <br><i>Figure 5.2.1: Use case diagram for creating a new complaint </i>
 </p>
+
 Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
 
 ### 5.2 Assign a Complaint
+
 The “assign” feature is a high-priority feature. Supervisors use the “assign” feature to assign an Investigator to a complaint under investigation.  
+
 #### 5.2.1 Functional Requirements  
 
 Table 5.2.1 describes the functional requirements for the “assign a complaint” feature:
+
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-12  | The system shall allow a Supervisor to assign an Investigator to a complaint. <br><br>**Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** Supervisors may use the “assign” feature to assign an Investigator to a complaint.|
@@ -253,10 +260,10 @@ Table 5.2.1 describes the functional requirements for the “assign a complaint�
 | REQ - 17 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall notify the Supervisor that the Investigator cannot be found. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** Inputting an unknown Investigator prompts an error to the Supervisor. |
 | REQ - 18 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall not assign the unknown Investigator to the specified complaint. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** The unknown Investigator is not assigned to the ticket in the SysAid database. The unknown Investigator is not assigned to the complaint in the Iris database. |
 
-
 #### 5.2.2 Associated Use Cases
 
 Table 5.2.2 outlines the primary use case for the “assign a complaint” feature.
+
 | Use Case 2 | Supervisor Assigning Complaint |
 |-------------------|--------------------------------------------|
 **Primary Actor** | Supervisor
@@ -270,18 +277,23 @@ Table 5.2.2 outlines the primary use case for the “assign a complaint” featu
 **Priority** | High
 
 #### 5.2.1 Use Case Diagram for Assigning Complaint
+
 <p = align="center">
-<img width="507" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd6b9ac3-8779-4b2a-a61e-6ac42e99e276">
-<br><i>Figure 5.2.1: Use case diagram for assigning a complaint </i>
+   <img width="507" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd6b9ac3-8779-4b2a-a61e-6ac42e99e276">
+   <br>
+   <i>Figure 5.2.1: Use case diagram for assigning a complaint </i>
 </p>
+
 Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
 
-
 ### 5.3 Update the Status of a Complaint
+
 The “update the status of a complaint” feature is a high-priority feature. An LIO will be able to use the feature to add new information to a complaint. An Investigator will be able to use the feature to document the investigation and resolution of a complaint.  
 
 #### 5.3.1 Functional Requirements
+
 Table 5.3.1 describes the functional requirements for the “update the status of a complaint” feature:  
+
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-19 | The system shall allow the following user-classes to update the status of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system. <br> **Acceptance Test:**  LIOs, Supervisors, and Investigators can access the "update a complaint" feature. |
@@ -291,17 +303,24 @@ Table 5.3.1 describes the functional requirements for the “update the status o
 | REQ-23 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
 | REQ-24| If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
 
-Table 5.3.2: Functional Requirements
+<p align="center">
+   <i>
+      Table 5.3.2: Functional Requirements
+   </i>
+</p>
 
 #### 5.3.2 Associated User Stories
+
 The following user stories describe the functional requirements associated with the “update” feature:
 - As an LIO, I want to update an existing complaint’s contents with additional information that was provided by the Complainant.
 - As an Investigator, I want to update a complaint I am investigating with my final resolution for the complaint.
 
 ### 5.4 View a Complaint
+
 The “view” complaint is a high-priority feature. An Investigator needs to be able to view the contents of a complaint to inform their investigations. An LIO needs to be able to view the complaint resolution.  
 
 #### 5.4.1 Functional Requirements
+
 Table 5.4.1 describes the functional requirements for the “view a complaint” feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
@@ -310,9 +329,14 @@ Table 5.4.1 describes the functional requirements for the “view a complaint”
 | REQ-27 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that are currently under investigation over complaints that have already been resolved. <br><br> **Rationale:** One of the client's business objectives is to increase efficiency, therefore only displaying relevant complaints will reduce time spent by Investigators searching for relevant complaints.<br> **Acceptance Test:** Complaints which are in-progress are prioritized and displayed before complaints that have been resolved. |
 | REQ-28 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that need urgent resolution over complaints that don’t require urgent resolution. <br><br> **Rationale:** Complaints that require urgent resolution should be easier to find in order to minimize the risk of them being sidelined or forgotten. <br> **Acceptance Test:** The complaints displayed to an Investigator should be sorted by priority, with higher priority complaints appearing first. |
 
-Table 5.4.2: Functional Requirements
+<p align="center">
+   <i>
+      Table 5.4.2: Functional Requirements
+   </i>
+</p>
 
 #### 5.4.2 Associated User Stories
+
 The following user stories describe the functional requirements associated with the “view” feature:
 - As an Investigator, I want to view the contents of a complaint that I am assigned to so I can determine the resolution for the complaint.
 - As a Supervisor, I want to view the contents of a complaint to determine the current resolution status of the investigation for the complaint.
@@ -462,8 +486,6 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | Traceability | The product must be able to track where a complaint came from to where it was sent once assigned to an Investigator, within a minute. |
 | Maintainability | The product must be able to deploy new features within 6 hours. |
 | Usability | The product must be ascertainable within a week for managers to use when communicating the tickets between the LIO that made the complaint to the Investigator the complaint was assigned too. |
-
-
 
 ## 9. Appendix
 
