@@ -223,6 +223,8 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 |**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
 |**Priority**       | High |
 
+#### 5.1.1 Use Case Diagram: Creating a Complaint
+
 <p align="center">
   <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
 </p>
