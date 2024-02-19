@@ -211,7 +211,23 @@ Sample Text
 
 #### **6.3 Data Acquisition, Integrity, Retention, and Disposal**
 
-Sample Text
+Data Acquisition
+- Employees diligently collect data via phone and email interactions with consumers, adhering to ethical standards and ensuring the secure acquisition of information. 
+- They confirm the accuracy and completeness of the data obtained, minimizing the risk of errors or inaccuracies. 
+- Utilizing secure communication channels, such as encrypted email services or secure phone lines, further enhances data integrity and confidentiality during the acquisition process. 
+- By prioritizing ethical practices and implementing stringent security measures, the system maintains the trust and reliability of the acquired data, laying a solid foundation for effective complaint resolution and analysis.
+
+Data Retention and Disposal
+- Once the complaints have been resolved, the data is securely retained within the IRIS in accordance with established retention policies. 
+- Historical complaint records remain accessible for reference purposes, aiding in trend analysis, regulatory compliance, and quality assurance efforts.
+- As part of the data retention strategy, the system employs security measures to safeguard the integrity and confidentiality of stored information. This includes encryption protocols, access controls, and regular audits to prevent unauthorized access or tampering. 
+- While the data is not disposed of, measures are in place to protect it from unauthorized access or misuse, thereby upholding the trust and integrity of the complaint management system.
+
+Data Integrity:
+- The system must validate incoming data on a regular basis and make sure it is free from errors or inconsistencies.
+- Sensitive data stored in the system should be encrypted to prevent unauthorized access or tampering.
+- Encryption algorithms and key management protocols should comply with industry standards and best practices.
+
 
 ## 7. External Interface Requirements
 
