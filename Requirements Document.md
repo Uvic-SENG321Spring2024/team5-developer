@@ -224,7 +224,7 @@ Table 5.1 describes the functional requirements for the "create a complaint" fea
 |**Priority**       | High |
 
 <p align="center">
-  <img width="728" alt="Create  use case diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/f4062aca-7342-4992-9c9e-ca57f8255ce6">
+  <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
 </p>
 
 #### **5.2 \[System Feature 2 Name\]**
