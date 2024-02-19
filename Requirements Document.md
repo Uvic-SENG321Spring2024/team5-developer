@@ -194,10 +194,35 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 
 Sample Text
 
+### 5.2 Assign a Complaint
+The “assign” feature is a high-priority feature. Supervisors use the “assign” feature to assign an investigator to a complaint under investigation.
+5.2.1 Functional Requirements
+Table 5.2 describes the functional requirements for the “assign a complaint” feature:
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-12  | The system shall allow a Supervisor to assign an Investigator to a complaint. <br><br>**Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** Supervisors may use the “assign” feature to assign an Investigator to a complaint.|
+| REQ - 13 | The system shall not allow an LIO to assign an Investigator to a complaint. <br><br> **Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** No possible way for an LIO to assign an Investigator to a complaint. |
+| REQ - 14 | The system shall not allow an Investigator to assign an Investigator to a complaint. <br><br> **Rationale:** The client elicitation interviews state that only Supervisors can assign Investigators to a complaint. <br> **Acceptance Test:** No possible way for an Investigator to assign an Investigator to a complaint. |
+| REQ - 15 | When a Supervisor assigns an Investigator to a complaint, the system shall assign the specified Investigator to the corresponding ticket within the SysAid database. <br><br> **Rationale:** The client’s System Details document states that SysAid has an Assigned To field that must be filled with the assigned Investigator. <br> **Acceptance Test:** After a Supervisor assigns an Investigator to a complaint, the Investigator must be assigned to the corresponding ticket in the SysAid database. |
+| REQ - 16 | When a Supervisor assigns an Investigator to a complaint, the system shall assign the specified Investigator to the corresponding complaint within the Iris database. <br><br> **Rationale:** The client’s System Details document states that Iris has an Investigator field that must be filled with the assigned Investigator. <br> **Acceptance Test:** After a Supervisor assigns an Investigator to a complaint, the Investigator must be assigned to the corresponding complaint in the Iris database. |
+| REQ - 17 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall notify the Supervisor that the Investigator cannot be found. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** Inputting an unknown Investigator prompts an error to the Supervisor. |
+| REQ - 18 | If a Supervisor assigns an unknown Investigator to a complaint, the system shall not assign the unknown Investigator to the specified complaint. <br><br> **Rationale:** The complaint should not be assigned to a non-existent Investigator. <br> **Acceptance Test:** The unknown Investigator is not assigned to the ticket in the SysAid database. The unknown Investigator is not assigned to the complaint in the Iris database. |
+| REQ - 19 | The system shall not allow a Supervisor to assign an invalid or non-existing complaint to an Investigator. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** No possible way for a Supervisor to assign an invalid complaint. If a Supervisor attempts to assign an invalid complaint, the system prompts an error to the Supervisor. |
 
-#### **5.2 \[System Feature 2 Name\]**
+Table 5.2: Functional Requirements for “assign a complaint” feature.
 
-Sample Text
+### 5.2.2 Associated Use Cases
+| Use Case 2 | Supervisor Assigning Complaint |
+|-------------------|--------------------------------------------|
+**Primary Actor** | Supervisor
+**Description** | The Supervisor assigns a complaint to an Investigator.
+**Trigger** | A complaint has been filed but is unassigned.
+**Preconditions** | - Supervisor’s identity is authenticated within the system <br> - There exists a complaint without an assigned Investigator.
+**Postconditions** | - The complaint in Iris has the updated information. <br> - The ticket in SysAid has the updated information. <br> - The Investigator has been notified of a new assigned ticket.
+**Normal Flow** | - Supervisor views an existing complaint. <br> - Supervisor inputs the assigned Investigator into the Investigator field of the complaint. <br> - The system automatically fills in the Department field of the complaint with the department associated with the assigned Investigator. <br> - Supervisor confirms the change.
+**Alternate Flow** | None
+**Exceptions** | - If the Investigator being assigned does not exist: The system notifies the Supervisor, does not assign the unknown Investigator to the complaint, and does not allow the change to be confirmed or saved.
+**Priority** | High
 
 ## 6. Data Requirements
 
