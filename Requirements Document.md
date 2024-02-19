@@ -405,7 +405,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
     * [2.5.1 Product Diagram](#251-product-diagram)
 * 5\. System Features
     * 5\.1 Create a Complaint
-        * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-a-complaint)
+        * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-complaint)
     * 5\.2 Assign a Complaint
         * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-a-complaint)
 * 6\. Data Requirements
@@ -426,7 +426,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
         * [5.4.1 Functional Requirements](#541-functional-requirements)
         * [5.4.2 Associated User Stories](#542-associated-user-stories)
 * 6\. Data Requirements
-    * [6.2.1 Complaint Object (Iris)](#621-complaint-object-(iris))
-    * [6.2.2 Ticket Object (SysAid)](#622-ticket-object-(sysaid))
+    * [6.2.1 Complaint Object (Iris)](#621-complaint-object-iris)
+    * [6.2.2 Ticket Object (SysAid)](#622-ticket-object-sysaid)
 * 8\. Software Quality Attributes
     * [8.1.1 Criteria for Non-Functional Requirements](#811-criteria-for-non-functional-requirements)
