@@ -196,7 +196,7 @@ Sample Text
 
 ### 5.2 Assign a Complaint
 The “assign” feature is a high-priority feature. Supervisors use the “assign” feature to assign an investigator to a complaint under investigation.  
-5.2.1 Functional Requirements  
+#### 5.2.1 Functional Requirements  
 
 Table 5.2 describes the functional requirements for the “assign a complaint” feature:
 | ID      | Requirement                                                |
