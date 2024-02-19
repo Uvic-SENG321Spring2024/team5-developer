@@ -211,7 +211,7 @@ Table 5.2 describes the functional requirements for the “assign a complaint”
 
 Table 5.2: Functional Requirements for “assign a complaint” feature.
 
-### 5.2.2 Associated Use Cases
+#### 5.2.2 Associated Use Cases
 | Use Case 2 | Supervisor Assigning Complaint |
 |-------------------|--------------------------------------------|
 **Primary Actor** | Supervisor
