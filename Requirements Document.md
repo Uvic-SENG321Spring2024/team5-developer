@@ -218,7 +218,7 @@ Note that the **Allowed Values** field is omitted for drop-down menus with a pre
 
 The compatibility for different types of **Attachments** in both objects is already handled by the pre-existing software. These can be handled as raw data and passed directly from the system to the existing software as long as they are within the accepted file size.
 
-#### 6.2.1 **Complaint Object (Iris)**
+#### 6.2.1 Complaint Object (Iris)
 
 | Data Element   | Field Description                                                                         | Data Type                                                                                                        | Input Format | Length | Allowed Values | Additional Notes                             |
 | ------------   | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------ | ------ | -------------- | -------------------------------------------- |
@@ -250,7 +250,7 @@ The compatibility for different types of **Attachments** in both objects is alre
 | Status         | Current status of the complaint, used to mark whether the complaint is open or resolved   | String    | Drop-Down              | 8 chars                                | “Open”<br>“Resolved”               | —                                                                                     |
 | Date Resolved  | Date that the complaint was marked as “Resolved”                                          | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31     | Autofilled with current date when status is set to “Resolved”                         |
 
-#### 6.2.2 **Ticket Object (SysAid)**
+#### 6.2.2 Ticket Object (SysAid)
 
 | Data Element   | Field Description                                                                                      | Data Type | Input Format           | Length                                 | Allowed Values                            | Additional Notes                                                                      |
 | -------------- | ------------------------------------------------------------------------------------------------------ | --------- | ---------------------- | -------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
