@@ -39,6 +39,7 @@
 - [5. System Features](#5-system-features)
    * [5.1 \[System Feature 1 Name\]](#51-system-feature-1-name)
    * [5.2 \[System Feature 2 Name\]](#52-system-feature-2-name)
+   * [5.3 Update the Status of a Complaint](#53-update-the-status-of-a-complaint)
 
 - [6. Data Requirements](#6-data-requirements)
    * [6.1 Logical Data Model](#61-logical-data-model)
@@ -198,6 +199,30 @@ Sample Text
 #### **5.2 \[System Feature 2 Name\]**
 
 Sample Text
+
+
+### 5.3 \[Update the Status of a Complaint\]
+The “update the status of a complaint” feature is a high-priority feature. An LIO will be able to use the feature to add new information to a complaint. An Investigator will be able to use the feature to document the investigation and resolution of a complaint.  
+
+#### 5.3.1 Functional Requirements
+Table 5.3 describes the functional requirements for the “update the status of a complaint” feature:  
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-19 | The system shall allow the following user-classes to update the status of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo). |
+| REQ-20 | The system shall allow an LIO, Supervisor, or Investigator to update the following complaint information fields of a complaint: <br> - Complainant's First Name <br> -  Complainant's Last Name <br> -  Complainant's Email Address <br> -  Complainant's Phone Number <br> -  Complainant's Address (including: Street, City, Province, Postal Code, Country) <br> - Complainant Comments <br> - Respondent (licensed business) <br> - Business Type <br> - Act Violated <br> - Description <br> - File Attachments <br> - Resolution Status <br> - Amount Credited or Refunded to Consumer <br> - Date of Credit or Refund to Consumer <br> - Penalty Amount for Respondent <br> - Penalty Payment Received Date <br> - Status of Complaint (Open, Resolved) <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo) |
+| REQ-21 | The system shall update the corresponding complaint’s contents in the Iris database when a complaint is updated. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** The corresponding complaint in Iris contains the updated information. |
+| REQ-22 | The system shall update the corresponding ticket’s status in the SysAid database when a complaint is updated. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** The corresponding ticket in SysAid contains the updated information. |
+| REQ-23 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
+| REQ-24| If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
+
+Table 5.3: Functional Requirements for “update the status of a complaint” feature.  
+
+
+#### 5.3.2 Associated User Stories
+The following user stories describe the functional requirements associated with the “update” feature:
+- As an LIO, I want to update an existing complaint’s contents with additional information that was provided by the complainant.
+- As an Investigator, I want to update a complaint I am investigating with my final resolution for the complaint.
+
 
 ## 6. Data Requirements
 
