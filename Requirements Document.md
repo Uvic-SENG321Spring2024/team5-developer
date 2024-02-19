@@ -277,7 +277,7 @@ Table 5.2.2 outlines the primary use case for the “assign a complaint” featu
 Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
 
 
-### 5.3 \[Update the Status of a Complaint\]
+### 5.3 Update the Status of a Complaint
 The “update the status of a complaint” feature is a high-priority feature. An LIO will be able to use the feature to add new information to a complaint. An Investigator will be able to use the feature to document the investigation and resolution of a complaint.  
 
 #### 5.3.1 Functional Requirements
@@ -485,7 +485,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
     * 5\.1 Create a Complaint
         * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-complaint)
     * 5\.2 Assign a Complaint
-        * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-complaint)
+        * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-for-assigning-complaint)
 * 6\. Data Requirements
     * [6.1.1 Entity Relationship Diagram](#611-entity-relationship-diagram)
 
