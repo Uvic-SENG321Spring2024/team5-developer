@@ -38,7 +38,7 @@
 
 - [5. System Features](#5-system-features)
    * [5.1 \[System Feature 1 Name\]](#51-system-feature-1-name)
-   * [5.2 \[System Feature 2 Name\]](#52-system-feature-2-name)
+   * [5.2 Assign a Complaint](#52-assign-a-complaint)
 
 - [6. Data Requirements](#6-data-requirements)
    * [6.1 Logical Data Model](#61-logical-data-model)
