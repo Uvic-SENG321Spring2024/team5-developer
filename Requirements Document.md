@@ -33,12 +33,13 @@
 - [4. Context Description](#4-context-description)
    * [4.1 User Classes and Characteristics](#41-user-classes-and-characteristics)
    * [4.2 Operating Environment](#42-operating-environment)
-   * [4.3 Design and Implmentation Constraints](#43-design-and-implmentation-constraints)
+   * [4.3 Design and Implementation Constraints](#43-design-and-implementation-constraints)
    * [4.4 Assumptions and Dependencies](#44-assumptions-and-dependencies)
 
 - [5. System Features](#5-system-features)
-   * [5.1 \[System Feature 1 Name\]](#51-system-feature-1-name)
+   * [5.1 Create a Complaint](#51-create-a-complaint)
    * [5.2 Assign a Complaint](#52-assign-a-complaint)
+   * [5.4 View a Complaint](#54-view-a-complaint)
 
 - [6. Data Requirements](#6-data-requirements)
    * [6.1 Logical Data Model](#61-logical-data-model)
@@ -55,6 +56,8 @@
 
 - [9. Appendix](#9-appendix)
    * [9.1 Glossary of Terms](#91-glossary-of-terms)
+   * [9.2 List of Figures](#92-list-of-figures)
+   * [9.3 List of Tables](#93-list-of-tables)
 
 ## 1. Overview
 
@@ -111,6 +114,8 @@ The success of the project is intertwined with these indicators, which collectiv
 #### **2.5 Product Vision Statement**
 
 The new product's vision is to revolutionize government consumer protection processes by seamlessly integrating existing complaint management systems, fostering efficiency, transparency, and accountability. Through innovative technology solutions, the new product aspire to empower government agencies by creating a harmonized ecosystem where complaints are swiftly addressed, trust is bolstered, and satisfaction is paramount. The following diagram illustrates this proposed process:
+
+#### 2.5.1 Product Diagram
 
 <p align="center">
    <img width="523" alt="Product Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd522fe6-d7f7-4aad-b2c9-13b2ad79119c">
@@ -190,7 +195,48 @@ Additionally, CPBC has access to the source code for Iris, but they do not have 
 
 ## 5. System Features
 
-#### **5.1 \[System Feature 1 Name\]**
+#### **5.1 Create a Complaint**
+The “create a complaint” feature is a high-priority feature. An LIO uses the “create a complaint” feature to create a new complaint in Iris and a corresponding ticket in SysAid. The LIO must be able to input all of the relevant complaint information into the system.
+
+#### 5.1.1 Functional Requirements
+Table 5.1.1 describes the functional requirements for the "create a complaint" feature:
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-1   | The system shall allow an LIO to create a new complaint. <br><br> **Rationale:** The client's RFP states that LIOs create complaints. <br> **Acceptance Test:** An LIO is able to access and use the "create a complaint" feature.|
+| REQ-2   | The system shall allow a Supervisor to create a new complaint. <br><br> **Rationale:**The client's RFP states that Supervisors create complaints. <br> **Acceptance Test:** A Supervisor is able to access and use the "create a complaint" feature.  |
+| REQ-3   | The system shall not allow an Investigator to create a new complaint. <br><br> **Rationale:** Investigators do not create complaints, determined through elicitation with the client. <br> **Acceptance Test:** There is no possible way for an investigator to access or use the "create a complaint" feature.   |
+| REQ-4   | The system shall open a new complaint in the Iris database when an LIO or Supervisor creates a complaint. <br><br> **Rationale:** The client's RFP states that the system will still interface with Iris, and during the initial client interview it was stated that complaints must still be stored within Iris. <br> **Acceptance Test:** When an LIO or Supervisor creates a complaint, the complaint is added to and is visible in Iris' database.  |
+| REQ-5   | The system shall create a ticket in the SysAid database when an LIO or Supervisor creates a complaint. <br><br> **Rationale:** The client's RFP states that the system will still interface with SysAid. <br> **Acceptance Test:** When an LIO or Supervisor creates a complaint, a ticket containing the same information is created and visible in SysAid.  |
+| REQ-6   | The system shall allow an LIO or Supervisor to fill in the following required complaint information fields: Complainant Information, Respondent, Business Type, Act Violated, Description, File Attachments <br><br> **Rationale:** The client's RFP states that complaints filed into Iris and tickets created in SysAid have fillable fields, therefore the system must have input fields for complaints. <br> **Acceptance Test:** Information input into the "create a complaint" feature is visible in the corresponding complaint in Iris.  |
+| REQ-7   | The system shall allow an LIO or Supervisor to add file attachments which do not exceed 25 MB in size. <br><br> **Rationale:** Attaching files is a functionality that was broguht up during the initial client elicitation interview. <br> **Acceptance Test:** Attached files can not exceed 25 MB and must be standard format (.pdf, .png, .jpeg, .zip, .mp4, etc...). The linked attachments must be visible in the corresponding complaint in Iris. |
+| REQ- 8  | If an LIO or Supervisor attaches a file attachment which exceeds 25 MB in size, the system shall not attach the oversized file to the complaint.  <br><br> **Rationale:** Attaching files which exceed 25 MB in size may cause the Iris database to run out of storage space. <br> **Acceptance Test:** Attaching a file which exceeds 25 MB in size does not allow the LIO or Supervisor to complete the complaint creation process. |
+| REQ-9   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall notify the LIO or Supervisor that the inputted information is improperly formatted. <br><br> **Rationale:** The client-provided System Details document shows the specific accepted input type and format of each fillable field in Iris and SysAid.<br> **Acceptance Test:** An error message is received when an LIO or Supervisor puts information into the system in the wrong format.  |
+| REQ-10   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not create a new complaint until the inputted information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** The system will not accept complaint submissions with formatting errors.|
+| REQ-11    | If the Complainant has previously filed a complaint, the system shall allow the LIO or Supervisor to autofill the Complainant Information. <br><br> **Rationale:** The client-provided System Details document states that there is a database of previous complainants.  <br> **Acceptance Test:** When creating a complaint for a complainant who has previously filed a complaint, the LIO or Supervisor does not need to fill in the complainant’s information; instead, it is automatically filled into each complaint information field.
+
+
+#### 5.1.2 Associated Use Cases
+Table 5.1.2 outlines the primary use case associated with the "create a complaint" feature:
+| Use Case 1        | LIO Creating Complaint                     |
+|-------------------|--------------------------------------------|
+|**Primary Actor**  | LIO                                         |
+|**Description**    | The LIO creates a new complaint after a consumer provides the LIO with the necessary information to investigate a BC Consumer Protection law or regulation violation.|
+|**Trigger**        | Consumer contacts BC Consumer Protection to file a complaint. |
+|**Preconditions**  | 1. LIO's identity is authenticated within the system. |
+|**Postconditions** | 1. The complaint and its contents are stores in the Iris database. <br> 2. The corresponding ticket for the complaint is stored in the SysAid database. |
+|**Normal Flow**    | 1. LIO inputs the following information into the complaint: Complainant Information, Respondent, Business Type, Created By, Reviewed By, Nature, Description, File Attachments, Impact, Priority<br> 2. LIO confirms information and creates the complaint.|
+|**Alternate Flow** | If the Complainant has filed a complaint before: The system autofills the Complainant Information section of the complaint.|
+|**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
+|**Priority**       | High |
+
+#### 5.1.1: Use Case Diagram for Creating Complaint
+  
+<p align="center">
+  <img width="698" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/b60f418f-06f6-4f14-9347-07ec84b771fb">
+</p>
+Figure 5.1.1 is a visual representation of the use case defined in Table 5.1.2.
+
+#### **5.2 \[System Feature 2 Name\]**
 
 Sample Text
 
@@ -231,19 +277,136 @@ Table 5.2.2 outlines the primary use case for the “assign a complaint” featu
 </p>
 Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
 
+
+### 5.4 View a Complaint
+The “view” complaint is a high-priority feature. An Investigator needs to be able to view the contents of a complaint to inform their investigations. An LIO needs to be able to view the complaint resolution.  
+
+#### 5.4.1 Functional Requirements
+Table 5.4.1 describes the functional requirements for the “view a complaint” feature:
+| ID      | Requirement                                                |
+|---------|------------------------------------------------------------|
+| REQ-25 | The system shall allow the following user-classes to view the contents of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system.<br> **Acceptance Test:** LIOs, Supervisors, and Investigators can access the "view a complaint" feature. |
+| REQ-26 | When an Investigator is selecting a complaint to view, the system shall strictly display complaints that are assigned to the Investigator. <br><br> **Rationale:** Elicitation with clients revealed that each Investigator does not require access to complaints they are not assigned to. <br> **Acceptance Test:** An Investigator is not able to view complaints that they are not assigned to. |
+| REQ-27 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that are currently under investigation over complaints that have already been resolved. <br><br> **Rationale:** One of the client's business objectives is to increase efficiency, therefore only displaying relevant complaints will reduce time spent by Investigators searching for relevant complaints.<br> **Acceptance Test:** Complaints which are in-progress are prioritized and displayed before complaints that have been resolved. |
+| REQ-28 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that need urgent resolution over complaints that don’t require urgent resolution. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo) |
+
+Table 5.4.2: Functional Requirements
+
+#### 5.4.2 Associated User Stories
+The following user stories describe the functional requirements associated with the “view” feature:
+- As an Investigator, I want to view the contents of a complaint that I am assigned to so I can determine the resolution for the complaint.
+- As a Supervisor, I want to view the contents of a complaint to determine the current resolution status of the investigation for the complaint.
+- As an LIO, I want to view the contents of a complaint to ensure the complaint contains all the necessary information provided by the complainant.
+
+
 ## 6. Data Requirements
 
 #### **6.1 Logical Data Model**
 
-Sample Text
+#### 6.1.1 Entity Relationship Diagram
+
+<p align="center">
+   <img width="523" alt="ERD" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/25752638/ec07ec2d-984d-4818-83e8-7f416a357f49">
+</p>
+
+Figure 6.1.1 depicts the data relationships between the entities in the system. 
+
+"Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. It is the layer that separates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
 
 #### **6.2 Data Dictionary**
 
-Sample Text
+The system uses two large data structures, each to interface with one of the two existing pieces of software:
+
+   1. For **Iris**, the *Complaint Object*
+   2. For **SysAid**, the *Ticket Object*
+
+Given that the system acts as a layer to mesh these two pieces of software together, any input from users must have the appropriate data type, length, and format expected by the pre-existing software. These parameters are described in the following **Data Dictionary**. The specifications for all primitives must be followed strictly to prevent errors when data is transferred to the existing software. Specifications are based on the limitations of the current software and cannot be altered by our implementation.
+
+Note that the **Allowed Values** field is omitted for drop-down menus with a predefined set of options. These options are already present within the pre-existing software components, and will be scraped by the system to populate these menus.
+
+The compatibility for different types of **Attachments** in both objects is already handled by the pre-existing software. These can be handled as raw data and passed directly from the system to the existing software as long as they are within the accepted file size.
+
+#### 6.2.1 Complaint Object (Iris)
+
+| Data Element   | Field Description                                                                         | Data Type                                                                                                        | Input Format | Length | Allowed Values | Additional Notes                             |
+| ------------   | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------ | ------ | -------------- | -------------------------------------------- |
+| Complainant    | Holds all personal information of the consumer making the complaint                       | \+ First Name<br>\+ Last Name<br>\+ Email<br>\+ Phone<br>\+ Address<br>\+ Comments                               | —            | —      | —              | —                                            |
+| Address        | Holds all details of the physical address of the complainant                              | \+ Street<br>\+ City<br>\+ Province<br>\+ Postal Code<br>\+ Country                                              | —            | —      | —              | —                                            |
+| Resolution     | Holds all details related to the resolution of the complaint                              | \+ Credit Amount<br>\+ Credit Date<br>\+ Penalty Amount<br>\+ Penalty Date<br>\+ Status<br>\+ Date Resolved      | —            | —      | —              | —                                            |
+| First Name     | First name of the complainant                                                             | String    | Text Field             | 50 chars                               | ASCII Characters                   | —                                                                                     |
+| Last Name      | Last name of the complainant                                                              | String    | Text Field             | 50 chars                               | ASCII Characters                   | —                                                                                     |
+| Email          | Email address of the complainant                                                          | String    | Text Field             | 50 chars                               | ASCII Characters                   | —                                                                                     |
+| Phone          | Phone number of the complainant                                                           | String    | Text Field             | 15 chars                               | ASCII Characters                   | —                                                                                     |
+| Country        | Country of the complainant                                                                | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | —                                                                                     |
+| Province       | Province of the complainant                                                               | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | —                                                                                     |
+| City           | City of the complainant                                                                   | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | —                                                                                     |
+| Street         | Street of the complainant                                                                 | String    | Text Field             | 50 chars                               | ASCII Characters                   | —                                                                                     |
+| Postal Code    | Postal or ZIP code of the complainant                                                     | String    | Text Field             | 10 chars                               | ASCII Characters                   | —                                                                                     |
+| Comments       | Additional comments made by the complainant not suitable for description box              | String    | Text Field             | 1000 chars                             | ASCII Characters                   | —                                                                                     |
+| Respondent     | Name of the licensed business addressed by the complaint, retrieved from CPBC’s database  | String    | Drop-Down              | 100 chars                              | *Scraped from existing software*   | —                                                                                     |
+| Business Type  | Type of business addressed by the complaint                                               | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | —                                                                                     |
+| Created By     | Name of the LIO that created the complaint                                                | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | Will usually be filled by the name of the LIO currently signed into the system        |
+| Reviewed By    | Name of the LIO supervisor that reviewed the complaint                                    | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | —                                                                                     |
+| Date Opened    | The date the complaint was created                                                        | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31     | Automatically filled when a new complaint is created in Iris                          |
+| Nature         | The act violated or relevant to the complaint                                             | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*   | —                                                                                     |
+| Description    | Open-ended description box for use at discretion of LIOs and Investigators to add details | String    | Text Field             | Dynamically allocated up to 3000 chars | ASCII Characters                   | Investigators use this field later to add information on how a complaint was resolved |
+| Attachments    | Attached documents or files relevant to the complaint                                     | Many      | “Add / Remove” buttons | 25 Mb                                  | Any filetype - handled as raw data | Attachment compatibility is handled by pre-existing software                          |
+| Credit Amount  | Amount credited or refunded to the complainant                                            | Int       | $0.00                  | 32 bits                                | 0 - 2<sup>32</sup>                 | —                                                                                     |
+| Credit Date    | Date that the credit amount was given to the consumer                                     | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31     | —                                                                                     |
+| Penalty Amount | Amount that the licensed business addressed by the complaint was fined                    | Int       | $0.00                  | 32 bits                                | 0 - 2<sup>32</sup>                 | —                                                                                     |
+| Penalty Date   | Date that the penalty amount was received by CPBC                                         | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31     | —                                                                                     |
+| Status         | Current status of the complaint, used to mark whether the complaint is open or resolved   | String    | Drop-Down              | 8 chars                                | “Open”<br>“Resolved”               | —                                                                                     |
+| Date Resolved  | Date that the complaint was marked as “Resolved”                                          | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31     | Autofilled with current date when status is set to “Resolved”                         |
+
+#### 6.2.2 Ticket Object (SysAid)
+
+| Data Element   | Field Description                                                                                      | Data Type | Input Format           | Length                                 | Allowed Values                            | Additional Notes                                                                      |
+| -------------- | ------------------------------------------------------------------------------------------------------ | --------- | ---------------------- | -------------------------------------- | ----------------------------------------- | ------------------------------------------------------------------------------------- |
+| Category       | Category that the associated complaint falls under                                                     | String    | Drop-Down              | 15 chars                               | *Scraped from existing software*          | LIOs will always fill this drop-down with the “complaint” option                      |
+| Status         | Current status of the ticket, used to mark whether the ticket is unaddressed, in progress or completed | String    | Drop-Down              | 12 chars                               | “Request”<br>“In Progress”<br>“Completed” | —                                                                                     |
+| Impact         | Severity of the complaint. Up to the discretion of LIOs                                                | String    | Drop-Down              | 8 chars                                | “Low”<br>“Medium”<br>“High”               | —                                                                                     |
+| Priority       | Priority of the complaint. Up to the discretion of LIOs                                                | String    | Drop-Down              | 8 chars                                | “Low”<br>“Medium”<br>“High”               | —                                                                                     |
+| Title          | Name of the ticket                                                                                     | String    | Text Field             | 50 chars                               | ASCII Characters                          | —                                                                                     |
+| Description    | Details about the task associated with the ticket                                                      | String    | Text Field             | Dynamically allocated up to 3000 chars | ASCII Characters                          | —                                                                                     |
+| Request User   | Name of the LIO that created the ticket                                                                | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*          | —                                                                                     |
+| Assigned To    | Name of the investigator assigned to the ticket by an LIO supervisor                                   | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*          | —                                                                                     |
+| Attachments    | Attached documents or files relevant to the complaint                                                  | Many      | “Add / Remove” buttons | 1000 Mb                                | Any filetype - handled as raw data        | Attachment compatibility is handled by pre-existing software                          |
+| Due Date       | Date that the ticket must be resolved by                                                               | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | —                                                                                     |
+| Street         | Street of the complainant                                                                              | String    | Text Field             | 50 chars                               | ASCII Characters                          | —                                                                                     |
+| Postal Code    | Postal or ZIP code of the complainant                                                                  | String    | Text Field             | 10 chars                               | ASCII Characters                          | —                                                                                     |
+| Comments       | Additional comments made by the complainant not suitable for description box                           | String    | Text Field             | 1000 chars                             | ASCII Characters                          | —                                                                                     |
+| Respondent     | Name of the licensed business addressed by the complaint, retrieved from CPBC’s database               | String    | Drop-Down              | 100 chars                              | *Scraped from existing software*          | —                                                                                     |
+| Business Type  | Type of business addressed by the complaint                                                            | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*          | —                                                                                     |
+| Created By     | Name of the LIO that created the complaint                                                             | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*          | Will usually be filled by the name of the LIO currently signed into the system        |
+| Reviewed By    | Name of the LIO supervisor that reviewed the complaint                                                 | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*          | —                                                                                     |
+| Date Opened    | The date the complaint was created                                                                     | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | Automatically filled when a new complaint is created in Iris                          |
+| Nature         | The act violated or relevant to the complaint                                                          | String    | Drop-Down              | 50 chars                               | *Scraped from existing software*          | —                                                                                     |
+| Description    | Open-ended description box for use at discretion of LIOs and Investigators to add details              | String    | Text Field             | Dynamically allocated up to 3000 chars | ASCII Characters                          | Investigators use this field later to add information on how a complaint was resolved |
+| Attachments    | Attached documents or files relevant to the complaint                                                  | Many      | “Add / Remove” buttons | 50 Mb                                   | Any filetype - handled as raw data        | Attachment compatibility is handled by pre-existing software. SysAid is noted to have a larger filesize limit.                          |
+| Credit Amount  | Amount credited or refunded to the complainant                                                         | Int       | $0.00                  | 32 bits                                | 0 - 232                                   | —                                                                                     |
+| Credit Date    | Date that the credit amount was given to the consumer                                                  | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | —                                                                                     |
+| Penalty Amount | Amount that the licensed business addressed by the complaint was fined                                 | Int       | $0.00                  | 32 bits                                | 0 - 232                                   | —                                                                                     |
+| Penalty Date   | Date that the penalty amount was received by CPBC                                                      | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | —                                                                                     |
+| Status         | Current status of the complaint, used to mark whether the complaint is open or resolved                | String    | Drop-Down              | 8 chars                                | “Open”<br>“Resolved”                      | —                                                                                     |
+| Date Resolved  | Date that the complaint was marked as “Resolved”                                                       | Int       | YYYY-MM–DD             | 32 bits                                | 1900-01-01<br>to<br>2999-12-31            | Autofilled with current date when status is set to “Resolved”                         |
 
 #### **6.3 Data Acquisition, Integrity, Retention, and Disposal**
 
-Sample Text
+Data Acquisition
+- LIOs collect data via phone and email interactions with consumers, adhering to ethical standards and ensuring the secure acquisition of information. 
+- LIOs confirm the accuracy and completeness of the data obtained, minimizing the risk of errors or inaccuracies. 
+- By prioritizing ethical practices and implementing stringent security measures, the system maintains the trust and reliability of the acquired data, laying a solid foundation for effective complaint resolution and analysis.
+
+Data Retention and Disposal
+- Once the complaints have been resolved, the data is securely retained within Iris database in accordance with established retention policies. 
+- Historical complaint records remain accessible for reference purposes, aiding in trend analysis, regulatory compliance, and quality assurance efforts.
+- While the data is not disposed of, encryption and access controls are in place to protect it from unauthorized access or misuse, thereby upholding the trust and integrity of the complaint management system.
+
+Data Integrity:
+- The system must validate incoming data on a regular basis and make sure it is free from errors or inconsistencies.
+- Sensitive data stored in the system should be encrypted to prevent unauthorized access or tampering.
+- Encryption algorithms and key management protocols should comply with industry standards and best practices.
+
 
 ## 7. External Interface Requirements
 
@@ -265,6 +428,8 @@ The product must communicate between SysAid and Iris on a windows machine. Iris 
 When an electronic form is sent  to SysAid from Iris, the product must notify SysAid that a form was sent and give confirmation to Iris of a successful notification to SysAid. The same procedure must happen when the two systems are flipped, an electronic form is sent to Iris from SysAid.
 
 ## 8. Software Quality Attributes
+
+#### 8.1.1 Criteria for Non-Functional Requirements
 
 | Non-Functional Requirements | Acceptance Criteria |
 | --------------------------- | ------------------- |
@@ -293,3 +458,33 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
 | Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
+#### **9.2 List of Figures**
+* 2\. Business Requirements
+    * [2.5.1 Product Diagram](#251-product-diagram)
+* 5\. System Features
+    * 5\.1 Create a Complaint
+        * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-complaint)
+    * 5\.2 Assign a Complaint
+        * [5.2.1 Use Case Diagram: Assigning a Complaint](#521-use-case-diagram-assigning-a-complaint)
+* 6\. Data Requirements
+    * [6.1.1 Entity Relationship Diagram](#611-entity-relationship-diagram)
+
+#### **9.3 List of Tables**
+* 5\. System Features
+    * 5\.1 Create a Complaint
+        * [5.1.1 Functional Requirements](#511-functional-requirements)
+        * [5.1.2 Associated Use Cases](#512-associated-use-cases)
+    * 5\.2 Assign a Complaint
+        * [5.2.1 Functional Requirements](#521-functional-requirements)
+        * [5.2.2 Associated Use Cases](#522-associated-use-cases)
+    * 5\.3 Update the Status of a Complaint
+        * [5.3.1 Functional Requirements](#531-functional-requirements)
+        * [5.3.2 Associated User Stories](#532-associated-user-stories)
+    * 5\.4 View a Complaint
+        * [5.4.1 Functional Requirements](#541-functional-requirements)
+        * [5.4.2 Associated User Stories](#542-associated-user-stories)
+* 6\. Data Requirements
+    * [6.2.1 Complaint Object (Iris)](#621-complaint-object-iris)
+    * [6.2.2 Ticket Object (SysAid)](#622-ticket-object-sysaid)
+* 8\. Software Quality Attributes
+    * [8.1.1 Criteria for Non-Functional Requirements](#811-criteria-for-non-functional-requirements)
