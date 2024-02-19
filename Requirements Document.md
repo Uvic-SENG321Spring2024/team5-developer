@@ -213,7 +213,7 @@ Table 5.4.1 describes the functional requirements for the “view a complaint”
 | REQ-27 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that are currently under investigation over complaints that have already been resolved. <br><br> **Rationale:** One of the client's business objectives is to increase efficiency, therefore only displaying relevant complaints will reduce time spent by Investigators searching for relevant complaints.<br> **Acceptance Test:** Complaints which are in-progress are prioritized and displayed before complaints that have been resolved. |
 | REQ-28 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that need urgent resolution over complaints that don’t require urgent resolution. <br><br> **Rationale:** (todo) <br> **Acceptance Test:** (todo) |
 
-Table 5.4: Functional Requirements for “view a complaint” feature.  
+Table 5.4.2: Functional Requirements
 
 #### 5.4.2 Associated User Stories
 The following user stories describe the functional requirements associated with the “view” feature:
