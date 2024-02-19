@@ -226,7 +226,7 @@ Table 5.2.2 outlines the primary use case for the “assign a complaint” featu
 **Priority** | High
 
 <p = align="center">
-<img width="830" alt="Assign  use case diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/f331deab-c1d9-481b-81b8-9ce8a33e8f5c">
+<img width="507" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/dd6b9ac3-8779-4b2a-a61e-6ac42e99e276">
 <br><i>Figure 5.2.1: Use case diagram for assigning a complaint </i>
 </p>
 Figure 5.2.1 is a visual representation of the use case defined in Table 5.2.2.
