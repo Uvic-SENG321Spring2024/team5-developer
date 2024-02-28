@@ -199,6 +199,14 @@ The only part of Iris’ system that the product will interact with is the compl
 Additionally, CPBC has access to the source code for Iris, but they do not have source code for SysAid. The product will need to automate the process of putting information into both Iris and SysAid. The dependency on SysAid and any limitations caused by a lack of access to source code may also necessitate changes to the requirements.
 
 ## 5. System Features
+#### 5.0.0: Use Case Diagram
+<p align="center">
+   <img width="795" alt="Use Case Diagram" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/101749612/591238b6-916f-42e1-944b-b259049b77e6">
+   <br>
+   <i>Figure 5.0.0: Use case diagram for the system. This diagram shows the abilities of each user. The LIOs can create, update, and view a complaint. Supervisors can create, assign, update, and view a complaint. Investigators can update and view a complaint. The diagram also illustrates the communications between the 3 users and the pre-existing Iris and SysAid databases.</i>
+</p>
+
+
 
 #### **5.1 Create a Complaint**
 
@@ -493,6 +501,8 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 * 2\. Business Requirements
     * [2.5.1 Product Diagram](#251-product-diagram)
 * 5\. System Features
+    * 5\.0 Create a Complaint
+        * [5.0.0 Use Case Diagram: Overall use Case Diagram](#500-use-case-diagram)
     * 5\.1 Create a Complaint
         * [5.1.1 Use Case Diagram: Creating a Complaint](#511-use-case-diagram-for-creating-complaint)
     * 5\.2 Assign a Complaint
