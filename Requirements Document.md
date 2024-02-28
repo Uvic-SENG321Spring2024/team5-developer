@@ -357,7 +357,7 @@ The following user stories describe the functional requirements associated with 
    <br><i>Figure 6.1.1: ERD diagram. </i>
 </p>
 
-Figure 6.1.1 depicts the data relationships between the entities in the system. 
+Figure 6.1.1 depicts the data relationships between the entities in the system. The multiplicity of each relationship is shown with a number or letter on the lines that connect entities and relationships, with "1" representing "one" and "M" representing "many." A line with "1 to M" or "M to 1" shows a one-to-many relationship, "M to M" is many-to-many, and "1 to 1" is one-to-one.
 
 "Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. It is the layer that separates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
 
