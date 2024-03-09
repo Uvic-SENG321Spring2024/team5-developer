@@ -484,9 +484,15 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | Maintainability | The product must be able to deploy new features within 6 hours. |
 | Usability | The product must be ascertainable within a week for managers to use when communicating the tickets between the LIO that made the complaint to the Investigator the complaint was assigned too. |
 
-## 9. Appendix
+## 9. Analysis Models (Data Flow Diagrams, Sequence Diagram, Storyboard, Swimlane diagram, Decision Tree Diagram )
 
-#### **9.1 Glossary of Terms**
+<p align="center">
+   <img width="523" alt="DFD" src="https://https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%200.png">
+</p>
+
+## 10. Appendix
+
+#### **10.1 Glossary of Terms**
 
 | Term | Definition |
 | ---- | ---------- |
@@ -497,7 +503,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | SysAid | Software system used to keep track of tickets and assign them to the relevant staff. |
 | Ticket | A task that needs to be completed in order for a complaint to be resolved. |
 
-#### **9.2 List of Figures**
+#### **10.2 List of Figures**
 * 2\. Business Requirements
     * [2.5.1 Product Diagram](#251-product-diagram)
 * 5\. System Features
@@ -510,7 +516,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 * 6\. Data Requirements
     * [6.1.1 Entity Relationship Diagram](#611-entity-relationship-diagram)
 
-#### **9.3 List of Tables**
+#### **10.3 List of Tables**
 * 5\. System Features
     * 5\.1 Create a Complaint
         * [5.1.1 Functional Requirements](#511-functional-requirements)
