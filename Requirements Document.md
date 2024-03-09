@@ -502,8 +502,18 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 </p>
 
 #### **9.1.2 DFD Level 1**
+<p align="center">
+   <img width="700" alt="DFD Level 1" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%201.png">
+</p>
 
 #### **9.1.3 DFD's Level 2**
+<p align="center">
+   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20DFD%20Level%202.png">
+</p>
+
+<p align="center">
+   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20DFD%20Level%202.png">
+</p>
 
 #### **9.2 Dialog Maps**
 
