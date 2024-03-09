@@ -59,10 +59,18 @@
 
 - [8. Software Quality Attributes](#8-software-quality-attributes)
 
-- [9. Appendix](#9-appendix)
-   * [9.1 Glossary of Terms](#91-glossary-of-terms)
-   * [9.2 List of Figures](#92-list-of-figures)
-   * [9.3 List of Tables](#93-list-of-tables)
+- [9. Analysis Models](#9-analysis-models)
+   * [9.1 Data Flow Diagrams](#91-data-flow-diagrams)
+   * [9.2 Dialog Maps](#92-dialog-maps)
+   * [9.3 Storyboard Features](#93-storyboard-features)
+   * [9.4 Sequence Diagrams](#94-sequence-diagrams)
+   * [9.5 Swimlan Diagrams](#95-swimlane-diagram)
+   * [9.6 Decision Tree](#96-decision-tree)
+
+- [10. Appendix](#9-appendix)
+   * [10.1 Glossary of Terms](#101-glossary-of-terms)
+   * [10.2 List of Figures](#102-list-of-figures)
+   * [10.3 List of Tables](#103-list-of-tables)
 
 ## 1. Overview
 
@@ -484,7 +492,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 | Maintainability | The product must be able to deploy new features within 6 hours. |
 | Usability | The product must be ascertainable within a week for managers to use when communicating the tickets between the LIO that made the complaint to the Investigator the complaint was assigned too. |
 
-## 9. Analysis Models (Data Flow Diagrams, Sequence Diagram, Storyboard, Swimlane diagram, Decision Tree Diagram )
+## 9. Analysis Models 
 
 #### **9.1 Data Flow Diagrams**
 
@@ -509,7 +517,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.3.1 Assign**
 
-#### **9.4 Sequence Diagram**
+#### **9.4 Sequence Diagrams**
 
 #### **9.5 Swinlane Diagrams**
 
