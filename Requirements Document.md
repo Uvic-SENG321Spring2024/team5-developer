@@ -516,22 +516,65 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 </p>
 
 #### **9.2 Dialog Maps**
+<p align="center">
+   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Update%20Complaint%20-%20Dialog%20Map.png">
+</p>
+
+<p align="center">
+   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Dialog%20Map.png">
+</p>
 
 #### **9.3 Storyboard Features**
 
 #### **9.3.1 View**
+<p align="center">
+   <img width="600" alt="view" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20View%20Complaint.png">
+</p>
 
 #### **9.3.1 Update**
+<p align="center">
+   <img width="600" alt="update" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Update%20Complaint.png">
+</p>
+
 
 #### **9.3.1 Create**
+<p align="center">
+   <img width="600" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Create%20Complaint.png">
+</p>
+
 
 #### **9.3.1 Assign**
+<p align="center">
+   <img width="600" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Assign%20Complaint.png">
+</p>
+
 
 #### **9.4 Sequence Diagrams**
+<p align="center">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
+</p>
+
+<p align="center">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/View%20Complaint%20-%20SLS.png">
+</p>
+
 
 #### **9.5 Swinlane Diagrams**
+<p align="center">
+   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
+</p>
+
+<p align="center">
+   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20Swimlane.png">
+</p>
+
+
 
 #### **9.6 Decision Tree**
+<p align="center">
+   <img width="600" alt="decision tree" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Edit%20Complaint%20-%20Decision%20Tree.png">
+</p>
+
 
 
 ## 10. Appendix
