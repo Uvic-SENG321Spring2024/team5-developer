@@ -487,7 +487,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 ## 9. Analysis Models (Data Flow Diagrams, Sequence Diagram, Storyboard, Swimlane diagram, Decision Tree Diagram )
 
 <p align="center">
-   <img width="523" alt="DFD" src="https://https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%200.png">
+   <img width="523" alt="DFD" src="https://https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%200">
 </p>
 
 ## 10. Appendix
