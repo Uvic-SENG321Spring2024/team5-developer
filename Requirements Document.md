@@ -486,9 +486,34 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 ## 9. Analysis Models (Data Flow Diagrams, Sequence Diagram, Storyboard, Swimlane diagram, Decision Tree Diagram )
 
+#### **9.1 Data Flow Diagrams**
+
+#### **9.1.1 DFD Level 0**
 <p align="center">
-   <img width="600" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%200.png">
+   <img width="700" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%200.png">
 </p>
+
+#### **9.1.2 DFD Level 1**
+
+#### **9.1.3 DFD's Level 2**
+
+#### **9.2 Dialog Maps**
+
+#### **9.3 Storyboard Features**
+
+#### **9.3.1 View**
+
+#### **9.3.1 Update**
+
+#### **9.3.1 Create**
+
+#### **9.3.1 Assign**
+
+#### **9.4 Sequence Diagram**
+
+#### **9.5 Swinlane Diagrams**
+
+#### **9.6 Decision Tree**
 
 
 ## 10. Appendix
