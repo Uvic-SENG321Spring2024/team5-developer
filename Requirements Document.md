@@ -565,7 +565,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 </p>
 
 
-#### **9.5 Swinlane Diagrams**
+#### **9.5 Swimlane Diagrams**
 <p align="center">
    <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
 </p>
