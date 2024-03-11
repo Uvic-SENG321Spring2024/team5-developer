@@ -529,23 +529,29 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 #### **9.3.1 View**
 <p align="center">
    <img width="600" alt="view" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20View%20Complaint.png">
+   <br><i>Figure 9.3.1: "View" storyboard. While this storyboard follows the dialog flow of an Investigator, LIOs and LIO Supervisors are also able to view a complaint in the same manner. The flow involves clicking anywhere on the complaint and being redirected to a complaint overview page. There are multiple tabs on the lefthand side that can be used to access the complaintant page, defendant (defined as the business accused of malpractice) page, and additional details page. </i>
 </p>
 
-#### **9.3.1 Update**
+
+
+#### **9.3.2 Update**
 <p align="center">
    <img width="600" alt="update" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Update%20Complaint.png">
+   <br><i>Figure 9.3.2: "Update" storyboard. While this storyboard follows the dialog flow of an LIO, LIO Supervisors are also able to update a complaint in the same manner. By clicking on the "Edit" button, an LIO is redirected to the complaint overview page where they can use drop downs to edit essential information such as the complaint's "Impact" (significance of complaint to CPBC) or "Priority" (importance of resolution). </i>
 </p>
 
 
-#### **9.3.1 Create**
+#### **9.3.3 Create**
 <p align="center">
    <img width="600" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Create%20Complaint.png">
+   <br><i>Figure 9.3.3: "Create" storyboard. While this storyboard follows the dialog flow of an LIO, LIO Supervisors are also able to create a complaint in the same manner. Clicking the "New" button in the top right corner will redirect the LIO to a complaint creation page, featuring a blank template complaint. By clicking the tabs on the left, the LIO can add information about a complaintant, defendant, or add attachments on the additional details page. When the "Create" button in the top right is clicked, the new complaint is finalized and added to the list of complaints. </i>
 </p>
 
 
-#### **9.3.1 Assign**
+#### **9.3.4 Assign**
 <p align="center">
    <img width="600" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Assign%20Complaint.png">
+   <br><i>Figure 9.3.4: "Assign" storyboard. Supervisors are able to see a "Assign" button on a complaint that has never been assigned to an Investigator, or a "Reassign"  button for the complaints that have already been assigned. The Supervisor uses a dropdown field to select an Investigator for the complaint. </i>
 </p>
 
 
