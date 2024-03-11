@@ -453,7 +453,8 @@ Data Integrity:
 
 #### **7.1 User Interfaces**
 
-This section will be completed in the next iteration.
+The user interface shows two use cases: create a complaint and assign a complaint.  The first use case is to assign a complaint to an Investigator, which is performed by a Supervisor. In the second figure, the system shows the main interface with a main menu and the option to create a complaint, which is accessed by Supervisors and LIOs.
+![image (1)](https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/156364991/95f1c533-ed88-4d58-89e4-8217d0736cd5)
 
 #### **7.2 Hardware Interfaces**
 
