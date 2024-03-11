@@ -499,29 +499,35 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 #### **9.1.1 DFD Level 0**
 <p align="center">
    <img width="700" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%200.png">
+    <br><i> Figure 9.1.1: Level 0 DFD with the IrisAid software as the main process.  </i>
 </p>
 
 #### **9.1.2 DFD Level 1**
 <p align="center">
    <img width="700" alt="DFD Level 1" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%201.png">
+    <br><i> Figure 9.1.2: Level 1 DFD focusing on the reception and checking of complaint data from LIOs, LIO Supervisors, and Investigators. </i>
 </p>
 
 #### **9.1.3 DFD's Level 2**
 <p align="center">
    <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20DFD%20Level%202.png">
+    <br><i> Figure 9.1.3.1: Level 2 DFD expanding on the "Check Data" process. </i>
 </p>
 
 <p align="center">
    <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20DFD%20Level%202.png">
+    <br><i> Figure 9.1.3.2: Level 2 DFD expanding on the "Assign Complaint" process. </i>
 </p>
 
 #### **9.2 Dialog Maps**
 <p align="center">
    <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Update%20Complaint%20-%20Dialog%20Map.png">
+    <br><i> Figure 9.2.1: Diaglog map about the "Update Complaint" feature. </i>
 </p>
 
 <p align="center">
    <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Dialog%20Map.png">
+    <br><i> Figure 9.2.2: Diaglog map about the "Assign Complaint" feature. </i>
 </p>
 
 #### **9.3 Storyboard Features**
@@ -558,20 +564,24 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 #### **9.4 Sequence Diagrams**
 <p align="center">
    <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
+    <br><i> Figure 9.4.1: Sequence diagram about the "Create Complaint" feature, with the LIO as the user. </i>
 </p>
 
 <p align="center">
    <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/View%20Complaint%20-%20SLS.png">
+    <br><i> Figure 9.4.2: Sequence diagram about the "View Complaint" feature, with the LIO as the user. </i>
 </p>
 
 
 #### **9.5 Swimlane Diagrams**
 <p align="center">
    <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
+    <br><i> Figure 9.5.1: Swimlane diagram about the "Assign Complaint" feature. </i>
 </p>
 
 <p align="center">
    <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20Swimlane.png">
+    <br><i> Figure 9.5.2: Swimlane diagram about the "Create Complaint" feature. </i>
 </p>
 
 
@@ -579,6 +589,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 #### **9.6 Decision Tree**
 <p align="center">
    <img width="600" alt="decision tree" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Edit%20Complaint%20-%20Decision%20Tree.png">
+    <br><i> Figure 9.6.1: Decision tree diagram about the "Edit Complaint" feature. </i>
 </p>
 
 
