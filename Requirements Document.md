@@ -462,7 +462,16 @@ Data Integrity:
 #### **7.1 User Interfaces**
 
 The user interface shows two use cases: create a complaint and assign a complaint.  The first use case is to assign a complaint to an Investigator, which is performed by a Supervisor. In the second figure, the system shows the main interface with a main menu and the option to create a complaint, which is accessed by Supervisors and LIOs.
-![image (1)](https://github.com/Uvic-SENG321Spring2024/team5-developer/assets/156364991/95f1c533-ed88-4d58-89e4-8217d0736cd5)
+
+<p align="center">
+   <img width="1400" alt="Supervisor Homepage" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Supervisor%20Homepage.png">
+    <br><i> Figure 7.1.1: Supervisor Homepage View. Supervisors can assign investigators to complaints from this page.  </i>
+</p>
+
+<p align="center">
+   <img width="700" alt="Update - Supervisor View" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Update%20(Overview%20Tab)%20-%20Supervisor.png">
+    <br><i> Figure 7.1.2: Main interface for creating or updating a complaint  </i>
+</p>
 
 #### **7.2 Hardware Interfaces**
 
