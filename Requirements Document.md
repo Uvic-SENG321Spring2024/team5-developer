@@ -241,7 +241,7 @@ Table 5.1.1 describes the functional requirements for the "create a complaint" f
 
 Table 5.1.2 outlines the primary use case associated with the "create a complaint" feature:
 
-| Use Case 1        | LIO Creating Complaint                     |
+| Use Case 1        | LIO or Supervisor Creating Complaint                     |
 |-------------------|--------------------------------------------|
 |**Primary Actor**  | LIO or Supervisor                                        |
 |**Description**    | The LIO or Supervisor creates a new complaint after a consumer provides the LIO or Supervisor with the necessary information to investigate a BC Consumer Protection law or regulation violation.|
