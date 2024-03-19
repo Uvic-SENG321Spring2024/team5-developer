@@ -573,12 +573,12 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.4 Sequence Diagrams**
 <p align="center">
-   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/c1632f8dc7340e844ad201412b3727bf4b4e8d63/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
     <br><i> Figure 9.4.1: Sequence diagram about the "Create Complaint" feature, with the LIO as the user. </i>
 </p>
 
 <p align="center">
-   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/View%20Complaint%20-%20SLS.png">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/dc213bc7d3d8f5d6d59e04d926eee30839e52eb6/Analysis%20Models/View%20Complaint%20-%20SLS.png">
     <br><i> Figure 9.4.2: Sequence diagram about the "View Complaint" feature, with the LIO as the user. </i>
 </p>
 
