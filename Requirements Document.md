@@ -492,7 +492,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 | Non-Functional Requirements | Acceptance Criteria |
 | --------------------------- | ------------------- |
-| Security | Each complaint must be seen by supervisors, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed non-employees. |
+| Security | Each complaint must be seen by supervisors, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed to non-employees. |
 | Availability | The product must be available to communicate complaints 99.99% of the time of a year (less than 52 minutes of downtime in a year) when an LIO is requested to raise a complaint. |
 | Performance | The product must be able to have 1000 LIO’s create complaints concurrently while having no problem communicating the ticket between SysAid and Iris when an LIO is processing a ticket. |
 | Efficiency | The product must be able to communicate information within 0.1 seconds between SysAid and Iris when an LIO raises a complaint. |
