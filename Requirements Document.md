@@ -384,7 +384,7 @@ The system uses two large data structures, each to interface with one of the two
    1. For **Iris**, the *Complaint Object*
    2. For **SysAid**, the *Ticket Object*
 
-Given that the system acts as a layer to mesh these two pieces of software together, any input from users must have the appropriate data type, length, and format expected by the pre-existing software. These parameters are described in the following **Data Dictionary**. The specifications for all primitives must be followed strictly to prevent errors when data is transferred to the existing software. Specifications are based on the limitations of the current software and cannot be altered by our implementation.
+Since our system meshes these two pieces of software together, any input from users must have the appropriate data type, length, and format expected by the pre-existing software. These parameters are described in the following **Data Dictionary**. The specifications for all primitives must be followed strictly to prevent errors when data is transferred to the existing software. Specifications are based on the limitations of the current software and cannot be altered by our implementation.
 
 Note that the **Allowed Values** field is omitted for drop-down menus with a predefined set of options. These options are already present within the pre-existing software components, and will be scraped by the system to populate these menus.
 
