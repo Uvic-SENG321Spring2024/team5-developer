@@ -508,35 +508,35 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.1.1 DFD Level 0**
 <p align="center">
-   <img width="700" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%200.png">
+   <img width="700" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%200.png">
     <br><i> Figure 9.1.1: Level 0 DFD with the IrisAid software as the main process.  </i>
 </p>
 
 #### **9.1.2 DFD Level 1**
 <p align="center">
-   <img width="700" alt="DFD Level 1" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%201.png">
+   <img width="700" alt="DFD Level 1" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%201.png">
     <br><i> Figure 9.1.2: Level 1 DFD focusing on the reception and checking of complaint data from LIOs, LIO Supervisors, and Investigators. </i>
 </p>
 
 #### **9.1.3 DFD's Level 2**
 <p align="center">
-   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20DFD%20Level%202.png">
+   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Create%20Complaint%20-%20DFD%20Level%202.png">
     <br><i> Figure 9.1.3.1: Level 2 DFD expanding on the "Check Data" process. </i>
 </p>
 
 <p align="center">
-   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20DFD%20Level%202.png">
+   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Assign%20Complaint%20-%20DFD%20Level%202.png">
     <br><i> Figure 9.1.3.2: Level 2 DFD expanding on the "Assign Complaint" process. </i>
 </p>
 
 #### **9.2 Dialog Maps**
 <p align="center">
-   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Update%20Complaint%20-%20Dialog%20Map.png">
+   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Update%20Complaint%20-%20Dialog%20Map.png">
     <br><i> Figure 9.2.1: Diaglog map about the "Update Complaint" feature. </i>
 </p>
 
 <p align="center">
-   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Dialog%20Map.png">
+   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Assign%20Complaint%20-%20Dialog%20Map.png">
     <br><i> Figure 9.2.2: Diaglog map about the "Assign Complaint" feature. </i>
 </p>
 
@@ -544,7 +544,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.3.1 View**
 <p align="center">
-   <img width="600" alt="view" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20View%20Complaint.png">
+   <img width="600" alt="view" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20View%20Complaint.png">
    <br><i>Figure 9.3.1: "View" storyboard. While this storyboard follows the dialog flow of an Investigator, LIOs and LIO Supervisors are also able to view a complaint in the same manner. The flow involves clicking anywhere on the complaint and being redirected to a complaint overview page. There are multiple tabs on the lefthand side that can be used to access the complaintant page, defendant (defined as the business accused of malpractice) page, and additional details page. </i>
 </p>
 
@@ -552,45 +552,45 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.3.2 Update**
 <p align="center">
-   <img width="600" alt="update" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Update%20Complaint.png">
+   <img width="600" alt="update" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20Update%20Complaint.png">
    <br><i>Figure 9.3.2: "Update" storyboard. While this storyboard follows the dialog flow of an LIO, LIO Supervisors are also able to update a complaint in the same manner. By clicking on the "Edit" button, an LIO is redirected to the complaint overview page where they can use drop downs to edit essential information such as the complaint's "Impact" (significance of complaint to CPBC) or "Priority" (importance of resolution). </i>
 </p>
 
 
 #### **9.3.3 Create**
 <p align="center">
-   <img width="600" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Create%20Complaint.png">
+   <img width="600" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20Create%20Complaint.png">
    <br><i>Figure 9.3.3: "Create" storyboard. While this storyboard follows the dialog flow of an LIO, LIO Supervisors are also able to create a complaint in the same manner. Clicking the "New" button in the top right corner will redirect the LIO to a complaint creation page, featuring a blank template complaint. By clicking the tabs on the left, the LIO can add information about a complaintant, defendant, or add attachments on the additional details page. When the "Create" button in the top right is clicked, the new complaint is finalized and added to the list of complaints. </i>
 </p>
 
 
 #### **9.3.4 Assign**
 <p align="center">
-   <img width="600" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Assign%20Complaint.png">
+   <img width="600" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20Assign%20Complaint.png">
    <br><i>Figure 9.3.4: "Assign" storyboard. Supervisors are able to see a "Assign" button on a complaint that has never been assigned to an Investigator, or a "Reassign"  button for the complaints that have already been assigned. The Supervisor uses a dropdown field to select an Investigator for the complaint. </i>
 </p>
 
 
 #### **9.4 Sequence Diagrams**
 <p align="center">
-   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/c1632f8dc7340e844ad201412b3727bf4b4e8d63/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
     <br><i> Figure 9.4.1: Sequence diagram about the "Create Complaint" feature, with the LIO as the user. </i>
 </p>
 
 <p align="center">
-   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/dc213bc7d3d8f5d6d59e04d926eee30839e52eb6/Analysis%20Models/View%20Complaint%20-%20SLS.png">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/View%20Complaint%20-%20SLS.png">
     <br><i> Figure 9.4.2: Sequence diagram about the "View Complaint" feature, with the LIO as the user. </i>
 </p>
 
 
 #### **9.5 Swimlane Diagrams**
 <p align="center">
-   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
+   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
     <br><i> Figure 9.5.1: Swimlane diagram about the "Assign Complaint" feature. </i>
 </p>
 
 <p align="center">
-   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20Swimlane.png">
+   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Create%20Complaint%20-%20Swimlane.png">
     <br><i> Figure 9.5.2: Swimlane diagram about the "Create Complaint" feature. </i>
 </p>
 
@@ -598,7 +598,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.6 Decision Tree**
 <p align="center">
-   <img width="600" alt="decision tree" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Edit%20Complaint%20-%20Decision%20Tree.png">
+   <img width="600" alt="decision tree" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Edit%20Complaint%20-%20Decision%20Tree.png">
     <br><i> Figure 9.6.1: Decision tree diagram about the "Edit Complaint" feature. </i>
 </p>
 
