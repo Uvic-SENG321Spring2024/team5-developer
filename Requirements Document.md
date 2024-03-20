@@ -232,7 +232,7 @@ Table 5.1.1 describes the functional requirements for the "create a complaint" f
 | REQ-5   | The system shall create a ticket in the SysAid database when an LIO or Supervisor creates a complaint. <br><br> **Rationale:** The client's RFP states that the system will still interface with SysAid. <br> **Acceptance Test:** When an LIO or Supervisor creates a complaint, a ticket containing the same information is created and visible in SysAid.  |
 | REQ-6   | The system shall allow an LIO or Supervisor to fill in the following required complaint information fields: Complainant Information, Respondent, Business Type, Act Violated, Description, File Attachments <br><br> **Rationale:** The client's RFP states that complaints filed into Iris and tickets created in SysAid have fillable fields, therefore the system must have input fields for complaints. <br> **Acceptance Test:** Information input into the "create a complaint" feature is visible in the corresponding complaint in Iris.  |
 | REQ-7   | The system shall allow an LIO or Supervisor to add file attachments which do not exceed 25 MB in size. <br><br> **Rationale:** Attaching files is a functionality that was broguht up during the initial client elicitation interview. <br> **Acceptance Test:** Can not attach files which exceed 25 MB in size. The linked attachments must be visible in the corresponding complaint in Iris. |
-| REQ- 8  | If an LIO or Supervisor attaches a file attachment which exceeds 25 MB in size, the system shall not attach the oversized file to the complaint.  <br><br> **Rationale:** Attaching files which exceed 25 MB in size may cause the Iris database to run out of storage space. <br> **Acceptance Test:** Attaching a file which exceeds 25 MB in size does not allow the LIO or Supervisor to complete the complaint creation process. |
+| REQ- 8  | If an LIO or Supervisor attaches a file attachment which exceeds 2 GB in size, the system shall not attach the oversized file to the complaint.  <br><br> **Rationale:** Attaching files which exceed 2 GB in size may cause the Iris database to run out of storage space. <br> **Acceptance Test:** Attaching a file which exceeds 2 GB in size does not allow the LIO or Supervisor to complete the complaint creation process. |
 | REQ-9   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall notify the LIO or Supervisor that the inputted information is improperly formatted. <br><br> **Rationale:** The client-provided System Details document shows the specific accepted input type and format of each fillable field in Iris and SysAid.<br> **Acceptance Test:** An error message is received when an LIO or Supervisor puts information into the system in the wrong format.  |
 | REQ-10   | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not create a new complaint until the inputted information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** The system will not accept complaint submissions with complaint input information formatting errors.|
 | REQ-11    | If the Complainant has previously filed a complaint, the system shall allow the LIO or Supervisor to autofill the Complainant Information. <br><br> **Rationale:** The client-provided System Details document states that there is a database of previous complainants.  <br> **Acceptance Test:** When creating a complaint for a complainant who has previously filed a complaint, the LIO or Supervisor does not need to fill in the complainant’s information; instead, it is automatically filled into each complaint information field.
@@ -315,11 +315,12 @@ Table 5.3.1 describes the functional requirements for the “update the status o
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
 | REQ-17 | The system shall allow the following user-classes to update the status of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system. <br> **Acceptance Test:**  LIOs, Supervisors, and Investigators can access the "update a complaint" feature. |
-| REQ-18 | The system shall allow an LIO, Supervisor, or Investigator to update the following complaint information fields of a complaint: <br> - Complainant's First Name <br> -  Complainant's Last Name <br> -  Complainant's Email Address <br> -  Complainant's Phone Number <br> -  Complainant's Address (including: Street, City, Province, Postal Code, Country) <br> - Complainant Comments <br> - Respondent (licensed business) <br> - Business Type <br> - Act Violated <br> - Description <br> - File Attachments <br> - Resolution Status <br> - Amount Credited or Refunded to Consumer <br> - Date of Credit or Refund to Consumer <br> - Penalty Amount for Respondent <br> - Penalty Payment Received Date <br> - Status of Complaint (Open, Resolved) <br><br> **Rationale:** The information fields listed above are required to create a complaint within the Iris database and a corresponding ticket within the SysAid database. <br> **Acceptance Test:** An LIO, Supervisor, or Investigator is able to update the complaint by editing each complaint information field. |
-| REQ-19 | The system shall update the corresponding complaint’s contents in the Iris database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states complaints must be stored within the Iris database.<br> **Acceptance Test:** The corresponding complaint in Iris contains the updated information. |
-| REQ-20 | The system shall update the corresponding ticket’s status in the SysAid database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states tickets which correspond to a complaint must be stored within the SysAid database. <br> **Acceptance Test:** The corresponding ticket in SysAid contains the updated information. |
-| REQ-21 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
-| REQ-22 | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
+| REQ-18 | The system shall allow an LIO or Supervisor to update the following complaint information fields of a complaint: <br> - Complainant's First Name <br> -  Complainant's Last Name <br> -  Complainant's Email Address <br> -  Complainant's Phone Number <br> -  Complainant's Address (including: Street, City, Province, Postal Code, Country) <br> - Complainant Comments <br> - Respondent (licensed business) <br> - Business Type <br> - Act Violated <br> - Description <br> - File Attachments <br> - Resolution Status <br> - Amount Credited or Refunded to Consumer <br> - Date of Credit or Refund to Consumer <br> - Penalty Amount for Respondent <br> - Penalty Payment Received Date <br> - Status of Complaint (Open, Resolved) <br><br> **Rationale:** The information fields listed above are editable within the Iris database and a corresponding ticket within the SysAid database. <br> **Acceptance Test:** An LIO or Supervisor is able to update the complaint by editing each complaint information field. |
+| REQ-19 | The system shall allow an Investigator to update the following complaint information fields of a complaint: <br> - Respondent (licensed business) <br> - Business Type <br> - Act Violated <br> - Description <br> - File Attachments <br> - Resolution Status <br> - Amount Credited or Refunded to Consumer <br> - Date of Credit or Refund to Consumer <br> - Penalty Amount for Respondent <br> - Penalty Payment Received Date <br> - Status of Complaint (Open, Resolved) <br><br> **Rationale:** The information fields listed above are editable within the Iris database and a corresponding ticket within the SysAid database. However, the complainant-related fields should not be editable by Investigators. <br> **Acceptance Test:** An Investigator is able to update the complaint by editing each complaint information field. |
+| REQ-20 | The system shall update the corresponding complaint’s contents in the Iris database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states complaints must be stored within the Iris database.<br> **Acceptance Test:** The corresponding complaint in Iris contains the updated information. |
+| REQ-21 | The system shall update the corresponding ticket’s status in the SysAid database when a complaint is updated. <br><br> **Rationale:** The client's Request for Proposal states tickets which correspond to a complaint must be stored within the SysAid database. <br> **Acceptance Test:** The corresponding ticket in SysAid contains the updated information. |
+| REQ-22 | If an LIO or Supervisor inputs improperly formatted information while updating a complaint information field, the system shall notify the LIO or Supervisor that the information is improperly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** An error message is displayed when a field is changed to have incorrectly formatted information. |
+| REQ-23 | If an LIO or Supervisor inputs improperly formatted information into a complaint information field, the system shall not update the complaint until the information fields are properly formatted. <br><br> **Rationale:** The business objective “Reduce Human Errors by 40%” in section 2.3 refers to reducing submission errors. <br> **Acceptance Test:** When a field is changed to have incorrectly formatted information, the system will not allow the changes to be saved.
 
 <p align="center">
    <i>
@@ -342,10 +343,10 @@ The “view” complaint is a high-priority feature. An Investigator needs to be
 Table 5.4.1 describes the functional requirements for the “view a complaint” feature:
 | ID      | Requirement                                                |
 |---------|------------------------------------------------------------|
-| REQ-23 | The system shall allow the following user-classes to view the contents of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system.<br> **Acceptance Test:** LIOs, Supervisors, and Investigators can access the "view a complaint" feature. |
-| REQ-24 | When an Investigator is selecting a complaint to view, the system shall strictly display complaints that are assigned to the Investigator. <br><br> **Rationale:** Elicitation with clients revealed that each Investigator does not require access to complaints they are not assigned to. <br> **Acceptance Test:** An Investigator is not able to view complaints that they are not assigned to. |
-| REQ-25 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that are currently under investigation over complaints that have already been resolved. <br><br> **Rationale:** One of the client's business objectives is to increase efficiency, therefore only displaying relevant complaints will reduce time spent by Investigators searching for relevant complaints.<br> **Acceptance Test:** Complaints which are in-progress are prioritized and displayed before complaints that have been resolved. |
-| REQ-26 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that need urgent resolution over complaints that don’t require urgent resolution. <br><br> **Rationale:** Complaints that require urgent resolution should be easier to find in order to minimize the risk of them being sidelined or forgotten. <br> **Acceptance Test:** The complaints displayed to an Investigator should be sorted by urgency priority, with higher urgency complaints appearing first. |
+| REQ-24 | The system shall allow the following user-classes to view the contents of a complaint: LIO, Supervisor, and Investigator. <br><br> **Rationale:** Elicitation with client defined LIOs, Supervisors, and Investigators as primary users of the system.<br> **Acceptance Test:** LIOs, Supervisors, and Investigators can access the "view a complaint" feature. |
+| REQ-25 | When an Investigator is selecting a complaint to view, the system shall strictly display complaints that are assigned to the Investigator. <br><br> **Rationale:** Elicitation with clients revealed that each Investigator does not require access to complaints they are not assigned to. <br> **Acceptance Test:** An Investigator is not able to view complaints that they are not assigned to. |
+| REQ-26 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that are currently under investigation over complaints that have already been resolved. <br><br> **Rationale:** One of the client's business objectives is to increase efficiency, therefore only displaying relevant complaints will reduce time spent by Investigators searching for relevant complaints.<br> **Acceptance Test:** Complaints which are in-progress are prioritized and displayed before complaints that have been resolved. |
+| REQ-27 | When an Investigator is selecting a complaint to view, the system shall prioritize displaying complaints that need urgent resolution over complaints that don’t require urgent resolution. <br><br> **Rationale:** Complaints that require urgent resolution should be easier to find in order to minimize the risk of them being sidelined or forgotten. <br> **Acceptance Test:** The complaints displayed to an Investigator should be sorted by urgency priority, with higher urgency complaints appearing first. |
 
 <p align="center">
    <i>
@@ -361,6 +362,7 @@ The following user stories describe the functional requirements associated with 
 - As an LIO, I want to view the contents of a complaint to ensure the complaint contains all the necessary information provided by the Complainant.
 
 ## 6. Data Requirements
+This section outlines relevant data requirements including a diagram of data flow, a full data dictionary, and specifications of data retention and disposal.
 
 #### **6.1 Logical Data Model**
 
@@ -373,7 +375,7 @@ The following user stories describe the functional requirements associated with 
 
 Figure 6.1.1 depicts the data relationships between the entities in the system. The multiplicity of each relationship is shown with a number or letter on the lines that connect entities and relationships, with "1" representing "one" and "M" representing "many." A line with "1 to M" or "M to 1" shows a one-to-many relationship, "M to M" is many-to-many, and "1 to 1" is one-to-one.
 
-"Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. It is the layer that separates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
+"Complaint Entry" refers to the entity that Supervisors create, assign, or update, LIOs create or update, and Investigators update. The Complaint Entry is the entity that separates LIOs, Supervisors, and Investigators from Iris and SysAid. The Complaint Entry will accept input from LIOs, Supervisors, and Investigators. Then, the Complaint Entry interfaces with both Iris and SysAid to generate a native Iris complaint and a native SysAid ticket.
 
 #### **6.2 Data Dictionary**
 
@@ -382,7 +384,7 @@ The system uses two large data structures, each to interface with one of the two
    1. For **Iris**, the *Complaint Object*
    2. For **SysAid**, the *Ticket Object*
 
-Given that the system acts as a layer to mesh these two pieces of software together, any input from users must have the appropriate data type, length, and format expected by the pre-existing software. These parameters are described in the following **Data Dictionary**. The specifications for all primitives must be followed strictly to prevent errors when data is transferred to the existing software. Specifications are based on the limitations of the current software and cannot be altered by our implementation.
+Since our system meshes these two pieces of software together, any input from users must have the appropriate data type, length, and format expected by the pre-existing software. These parameters are described in the following **Data Dictionary**. The specifications for all primitives must be followed strictly to prevent errors when data is transferred to the existing software. Specifications are based on the limitations of the current software and cannot be altered by our implementation.
 
 Note that the **Allowed Values** field is omitted for drop-down menus with a predefined set of options. These options are already present within the pre-existing software components, and will be scraped by the system to populate these menus.
 
@@ -473,7 +475,7 @@ The user interface shows two use cases: create a complaint and assign a complain
 
 #### **7.2 Hardware Interfaces**
 
-The product will run on a Windows machine which has at least Windows 11 Operating System. It will connect to the current Database, which will store the past, current and future data.
+The product will run on a Windows machine which has at least Windows 11 Operating System. It will connect to the current Iris Database, which will store the past, current and future data.
 
 #### **7.3 Software Interfaces**
 
@@ -481,8 +483,8 @@ The product connects the SysAid and Iris systems, per each complaint made. As ea
 
 #### **7.4 Communication Interfaces**
 
-The product must communicate between SysAid and Iris on a windows machine. Iris must communicate a ticket in an electronic form to SysAid through the product and vice versa.  
-When an electronic form is sent  to SysAid from Iris, the product must notify SysAid that a form was sent and give confirmation to Iris of a successful notification to SysAid. The same procedure must happen when the two systems are flipped, an electronic form is sent to Iris from SysAid.
+Iris must transfer a ticket in an electronic form to SysAid through the product and vice versa.
+When an electronic form is sent to SysAid from Iris, the product must notify SysAid that a form was sent and give confirmation to Iris of a successful notification to SysAid. The same procedure must happen when the two systems are flipped, an electronic form is sent to Iris from SysAid.
 
 ## 8. Software Quality Attributes
 
@@ -490,11 +492,10 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 | Non-Functional Requirements | Acceptance Criteria |
 | --------------------------- | ------------------- |
-| Security | Each complaint must be secure and be seen by managers, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed. |
-| Reusability | The product must be able to be reused 100% of the time when the product is up and running to make each complaint that the LIO wants without disruptions and complications. |
-| Availability | The product must be available to communicate complaints 99.99% of the time of a year (less than 52 minutes of downtime in a year) when an LIO is requested to make a complaint. |
+| Security | Each complaint must be seen by supervisors, the LIO’s that created the complaint and investigators the complaint is assigned to. Personal data must never be exposed to non-employees. |
+| Availability | The product must be available to communicate complaints 99.99% of the time of a year (less than 52 minutes of downtime in a year) when an LIO is requested to raise a complaint. |
 | Performance | The product must be able to have 1000 LIO’s create complaints concurrently while having no problem communicating the ticket between SysAid and Iris when an LIO is processing a ticket. |
-| Efficiency | The product must be able to communicate information 99.99% of the time (less than 52 minutes of downtime in a year) between SysAid and Iris when an LIO submits a complaint. |
+| Efficiency | The product must be able to communicate information within 0.1 seconds between SysAid and Iris when an LIO raises a complaint. |
 | Interoperability | The product must have a 99.99% (less than 52 minutes of downtime in a year) ability to exchange and make use of the information between Iris and SysAid. |
 | Traceability | The product must be able to track where a complaint came from to where it was sent once assigned to an Investigator, within a minute. |
 | Maintainability | The product must be able to deploy new features within 6 hours. |
@@ -506,35 +507,35 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.1.1 DFD Level 0**
 <p align="center">
-   <img width="700" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%200.png">
+   <img width="700" alt="DFD Level 0" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%200.png">
     <br><i> Figure 9.1.1: Level 0 DFD with the IrisAid software as the main process.  </i>
 </p>
 
 #### **9.1.2 DFD Level 1**
 <p align="center">
-   <img width="700" alt="DFD Level 1" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/437e69ee6729677c7805949a772135eb12395ffc/Analysis%20Models/DFD%20Level%201.png">
+   <img width="700" alt="DFD Level 1" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/DFD%20Level%201.png">
     <br><i> Figure 9.1.2: Level 1 DFD focusing on the reception and checking of complaint data from LIOs, LIO Supervisors, and Investigators. </i>
 </p>
 
 #### **9.1.3 DFD's Level 2**
 <p align="center">
-   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20DFD%20Level%202.png">
+   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Create%20Complaint%20-%20DFD%20Level%202.png">
     <br><i> Figure 9.1.3.1: Level 2 DFD expanding on the "Check Data" process. </i>
 </p>
 
 <p align="center">
-   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20DFD%20Level%202.png">
+   <img width="700" alt="DFD Level 2" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Assign%20Complaint%20-%20DFD%20Level%202.png">
     <br><i> Figure 9.1.3.2: Level 2 DFD expanding on the "Assign Complaint" process. </i>
 </p>
 
 #### **9.2 Dialog Maps**
 <p align="center">
-   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Update%20Complaint%20-%20Dialog%20Map.png">
+   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Update%20Complaint%20-%20Dialog%20Map.png">
     <br><i> Figure 9.2.1: Diaglog map about the "Update Complaint" feature. </i>
 </p>
 
 <p align="center">
-   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Dialog%20Map.png">
+   <img width="700" alt="Dialog Maps" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Assign%20Complaint%20-%20Dialog%20Map.png">
     <br><i> Figure 9.2.2: Diaglog map about the "Assign Complaint" feature. </i>
 </p>
 
@@ -542,7 +543,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.3.1 View**
 <p align="center">
-   <img width="600" alt="view" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20View%20Complaint.png">
+   <img width="600" alt="view" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20View%20Complaint.png">
    <br><i>Figure 9.3.1: "View" storyboard. While this storyboard follows the dialog flow of an Investigator, LIOs and LIO Supervisors are also able to view a complaint in the same manner. The flow involves clicking anywhere on the complaint and being redirected to a complaint overview page. There are multiple tabs on the lefthand side that can be used to access the complaintant page, defendant (defined as the business accused of malpractice) page, and additional details page. </i>
 </p>
 
@@ -550,45 +551,45 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.3.2 Update**
 <p align="center">
-   <img width="600" alt="update" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Update%20Complaint.png">
+   <img width="600" alt="update" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20Update%20Complaint.png">
    <br><i>Figure 9.3.2: "Update" storyboard. While this storyboard follows the dialog flow of an LIO, LIO Supervisors are also able to update a complaint in the same manner. By clicking on the "Edit" button, an LIO is redirected to the complaint overview page where they can use drop downs to edit essential information such as the complaint's "Impact" (significance of complaint to CPBC) or "Priority" (importance of resolution). </i>
 </p>
 
 
 #### **9.3.3 Create**
 <p align="center">
-   <img width="600" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Create%20Complaint.png">
+   <img width="600" alt="create" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20Create%20Complaint.png">
    <br><i>Figure 9.3.3: "Create" storyboard. While this storyboard follows the dialog flow of an LIO, LIO Supervisors are also able to create a complaint in the same manner. Clicking the "New" button in the top right corner will redirect the LIO to a complaint creation page, featuring a blank template complaint. By clicking the tabs on the left, the LIO can add information about a complaintant, defendant, or add attachments on the additional details page. When the "Create" button in the top right is clicked, the new complaint is finalized and added to the list of complaints. </i>
 </p>
 
 
 #### **9.3.4 Assign**
 <p align="center">
-   <img width="600" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Storyboard%20-%20Assign%20Complaint.png">
+   <img width="600" alt="assign" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Storyboard%20-%20Assign%20Complaint.png">
    <br><i>Figure 9.3.4: "Assign" storyboard. Supervisors are able to see a "Assign" button on a complaint that has never been assigned to an Investigator, or a "Reassign"  button for the complaints that have already been assigned. The Supervisor uses a dropdown field to select an Investigator for the complaint. </i>
 </p>
 
 
 #### **9.4 Sequence Diagrams**
 <p align="center">
-   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/c1632f8dc7340e844ad201412b3727bf4b4e8d63/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Create%20Complaint%20-%20SLS.png">
     <br><i> Figure 9.4.1: Sequence diagram about the "Create Complaint" feature, with the LIO as the user. </i>
 </p>
 
 <p align="center">
-   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/dc213bc7d3d8f5d6d59e04d926eee30839e52eb6/Analysis%20Models/View%20Complaint%20-%20SLS.png">
+   <img width="600" alt="sequence diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/View%20Complaint%20-%20SLS.png">
     <br><i> Figure 9.4.2: Sequence diagram about the "View Complaint" feature, with the LIO as the user. </i>
 </p>
 
 
 #### **9.5 Swimlane Diagrams**
 <p align="center">
-   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
+   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Assign%20Complaint%20-%20Swimlane.png">
     <br><i> Figure 9.5.1: Swimlane diagram about the "Assign Complaint" feature. </i>
 </p>
 
 <p align="center">
-   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Create%20Complaint%20-%20Swimlane.png">
+   <img width="600" alt="swimlane diagrams" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Create%20Complaint%20-%20Swimlane.png">
     <br><i> Figure 9.5.2: Swimlane diagram about the "Create Complaint" feature. </i>
 </p>
 
@@ -596,7 +597,7 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 #### **9.6 Decision Tree**
 <p align="center">
-   <img width="600" alt="decision tree" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/261c01c761df360dea538d201ea49b6d91d76461/Analysis%20Models/Edit%20Complaint%20-%20Decision%20Tree.png">
+   <img width="600" alt="decision tree" src="https://github.com/Uvic-SENG321Spring2024/team5-developer/blob/main/Analysis%20Models/Edit%20Complaint%20-%20Decision%20Tree.png">
     <br><i> Figure 9.6.1: Decision tree diagram about the "Edit Complaint" feature. </i>
 </p>
 
