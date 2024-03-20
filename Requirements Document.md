@@ -241,16 +241,16 @@ Table 5.1.1 describes the functional requirements for the "create a complaint" f
 
 Table 5.1.2 outlines the primary use case associated with the "create a complaint" feature:
 
-| Use Case 1        | LIO Creating Complaint                     |
+| Use Case 1        | LIO or Supervisor Creating Complaint                     |
 |-------------------|--------------------------------------------|
-|**Primary Actor**  | LIO                                         |
-|**Description**    | The LIO creates a new complaint after a consumer provides the LIO with the necessary information to investigate a BC Consumer Protection law or regulation violation.|
+|**Primary Actor**  | LIO or Supervisor                                        |
+|**Description**    | The LIO or Supervisor creates a new complaint after a consumer provides the LIO or Supervisor with the necessary information to investigate a BC Consumer Protection law or regulation violation.|
 |**Trigger**        | Consumer contacts BC Consumer Protection to file a complaint. |
-|**Preconditions**  | 1. LIO's identity is authenticated within the system. |
+|**Preconditions**  | 1. LIO or Supervisor's identity is authenticated within the system. |
 |**Postconditions** | 1. The complaint and its contents are stores in the Iris database. <br> 2. The corresponding ticket for the complaint is stored in the SysAid database. |
-|**Normal Flow**    | 1. LIO inputs the following information into the complaint: Complainant Information, Respondent, Business Type, Created By, Reviewed By, Nature, Description, File Attachments, Impact, Priority<br> 2. LIO confirms information and creates the complaint.|
+|**Normal Flow**    | 1. LIO or Supervisor inputs the following information into the complaint: Complainant Information, Respondent, Business Type, Created By, Reviewed By, Nature, Description, File Attachments, Impact, Priority<br> 2. LIO or Supervisor confirms information and creates the complaint.|
 |**Alternate Flow** | If the Complainant has filed a complaint before: The system autofills the Complainant Information section of the complaint.|
-|**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO and does not create a complaint until issues are resolved.|
+|**Exceptions**     | For all input fields: If the input format is incorrect, the system notifies the LIO or Supervisor and does not create a complaint until issues are resolved.|
 |**Priority**       | High |
 
 #### 5.1.1: Use Case Diagram for Creating Complaint
