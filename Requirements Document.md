@@ -475,7 +475,7 @@ The user interface shows two use cases: create a complaint and assign a complain
 
 #### **7.2 Hardware Interfaces**
 
-The product will run on a Windows machine which has at least Windows 11 Operating System. It will connect to the current Iris' Database, which will store the past, current and future data.
+The product will run on a Windows machine which has at least Windows 11 Operating System. It will connect to the current Iris Database, which will store the past, current and future data.
 
 #### **7.3 Software Interfaces**
 
