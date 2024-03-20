@@ -475,7 +475,7 @@ The user interface shows two use cases: create a complaint and assign a complain
 
 #### **7.2 Hardware Interfaces**
 
-The product will run on a Windows machine which has at least Windows 11 Operating System. It will connect to the current Database, which will store the past, current and future data.
+The product will run on a Windows machine which has at least Windows 11 Operating System. It will connect to the current Iris' Database, which will store the past, current and future data.
 
 #### **7.3 Software Interfaces**
 
@@ -483,8 +483,8 @@ The product connects the SysAid and Iris systems, per each complaint made. As ea
 
 #### **7.4 Communication Interfaces**
 
-The product must communicate between SysAid and Iris on a windows machine. Iris must communicate a ticket in an electronic form to SysAid through the product and vice versa.  
-When an electronic form is sent  to SysAid from Iris, the product must notify SysAid that a form was sent and give confirmation to Iris of a successful notification to SysAid. The same procedure must happen when the two systems are flipped, an electronic form is sent to Iris from SysAid.
+Iris must transfer a ticket in an electronic form to SysAid through the product and vice versa.
+When an electronic form is sent to SysAid from Iris, the product must notify SysAid that a form was sent and give confirmation to Iris of a successful notification to SysAid. The same procedure must happen when the two systems are flipped, an electronic form is sent to Iris from SysAid.
 
 ## 8. Software Quality Attributes
 
