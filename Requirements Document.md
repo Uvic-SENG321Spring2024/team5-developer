@@ -1,4 +1,4 @@
-main/<p = align="center">
+<p = align="center">
    <img src="https://www.consumerprotectionbc.ca/wordpress/wp-content/themes/consumerprotectionbc/images/logo.png" width="30%">
 <p>
 
