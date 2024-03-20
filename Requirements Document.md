@@ -504,6 +504,8 @@ When an electronic form is sent  to SysAid from Iris, the product must notify Sy
 
 ## 9. Analysis Models 
 
+This section contains a various amount of descriptive graphs that explain the data flow of the system and the four main features of the system.
+
 #### **9.1 Data Flow Diagrams**
 
 #### **9.1.1 DFD Level 0**
